@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cart.js" defer></script>
+    <script src="account.js" defer></script>
+</head>
+
+<body>
+    
+    <section id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="Website Logo">
+        </div>
+        <ul id="navbar-buttons">
+            <li><a id="home-link" href="#">Home</a></li>
+            <li class="dropdown">
+                <a id="lidl-link" href="lidl.html">Lidl <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Lidl Item 1</a></li>
+                    <li><a href="#">Lidl Item 2</a></li>
+                    <li><a href="#">Lidl Item 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a id="aldi-link" href="#">Aldi <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Aldi Item 1</a></li>
+                    <li><a href="#">Aldi Item 2</a></li>
+                    <li><a href="#">Aldi Item 3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="other-buttons">
+            <i id="search-link" class="fi-br-search"></i>
+            <li id="profile-dropdown">
+                <a id="account-link"><i class="fi-br-portrait"></i></a>
+                <ul id="profile-content">
+                    <li><p id="profile-username">test12341234</p></li>
+                    <li><p id="logout" onclick="logout()">Logout <i class="fi-br-sign-out-alt"></i></p></li>
+                </ul>
+            </li>
+            <a class="active" id="shopping-cart" href="cart.html">
+                <i id="cart-link" class="fi-br-shopping-bag"></i>
+                <h1 id="cart-counter">0</h1>
+            </a>
+        </div>        
+    </section>
+
+    <section id="shopping-list" class="section-p1">
+        <div class="box">
+            <div class="content">
+                <h1>Winkelwagen</h1>
+                <div class="shops">
+                    <div class="no-products" id="no-products" style="display: none;">
+                        <h1>Je hebt nog geen producten in je winkelwagen.</h1>
+                    </div>                    
+                    <div class="lidl" id="lidl-container">
+                        <h1>Lidl vuurwerk</h1>
+                        <div class="product-container" id="lidl-products">
+                            <!-- Lidl cart items will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <div class="aldi" id="aldi-container">
+                        <h1>Aldi Vuurwerk</h1>
+                        <div class="product-container" id="aldi-products">
+                            <!-- Aldi cart items will be dynamically inserted here -->
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="orderdetails" id="order-details">
+                <h1>Bestelling</h1>
+                <div class="subtotal">
+                    <h1>Subtotaal</h1>
+                    <h2>0.00</h2> <!-- This will be updated -->
+                </div>
+                <div class="sum">
+                    <div class="lidl-price">
+                        <h1>Lidl</h1>
+                        <h2>0.00</h2> <!-- This will be updated -->
+                    </div>
+                    <div class="aldi-price">
+                        <h1>Aldi</h1>
+                        <h2>0.00</h2> <!-- This will be updated -->
+                    </div>
+                </div>
+                <div class="total">
+                    <h1>Totaalbedrag</h1>
+                    <h2>0.00</h2> <!-- This will be updated -->
+                </div>            
+                <div class="let-op">
+                    <h1>* Let op! Dit is puur voor lijstjes doeleinde. Wij verkopen niets.</h1>
+                </div>
+            </div>
+        </div>    
+    </section>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script>
+
+    window.onload = function() {
+    
+        sessionStorage.setItem('lastVisitedPage', window.location.href);
+        
+        const profileDropdown = document.getElementById('profile-dropdown');
+    
+        if (profileDropdown) {
+            const loggedIn = sessionStorage.getItem('loggedIn') === 'true' || localStorage.getItem('loggedIn') === 'true'
+            
+            if (loggedIn) {
+                const click = sessionStorage.getItem('click') === 'true' || localStorage.getItem('click') === 'true'
+                const accountLink = document.getElementById('account-link');
+                document.getElementById('account-link').href = 'javascript:void(0)'
+    
+                if (click) {
+                    profileDropdown.classList.add('click');
+    
+                    const username = localStorage.getItem('username');
+                    if (username) {
+                        document.getElementById('profile-username').innerText = username;
+                    }
+                }
+    
+                else {
+                    profileDropdown.classList.add('logged-in');
+                    
+                    // Restore the username from localStorage
+                    const username = localStorage.getItem('username');
+                    if (username) {
+                        document.getElementById('profile-username').innerText = username;
+                    }
+                }
+            }
+    
+            else {
+                
+                profileDropdown.classList.remove('click');
+                profileDropdown.classList.remove('logged-in');
+                document.getElementById('account-link').href = 'account.html'
+            }
+    
+        }
+    };
+    
+    
+    document.addEventListener('click', function(event) {
+        const profileDropdown = document.getElementById('profile-dropdown');
+    
+        // Check if the clicked target is not the profile content or its children
+        if (profileDropdown.classList.contains('click') && !profileDropdown.contains(event.target)) {
+            profileDropdown.classList.remove('click');
+            profileDropdown.classList.add('logged-in');
+    
+            sessionStorage.setItem('click', 'false');
+            localStorage.setItem('click', 'false');
+        }
+    });
+        </script>
+
+
+</html>

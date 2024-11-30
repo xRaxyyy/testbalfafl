@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidl - Discounter Feuerwerk</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f6f6445ca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="account.js" defer></script>
+</head>
+
+<body id="body">
+
+    <section id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="Website Logo">
+        </div>
+        
+        <!-- Main navigation for desktop -->
+        <ul id="navbar-buttons">
+            <li><a id="home-link" href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a class="active" id="lidl-link" href="lidl.html">Lidl <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="lidl/cakes.html">Cakes</a></li>
+                    <!-- other Lidl links -->
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a id="aldi-link" href="#">Aldi <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="aldi/cakes.html">Cakes</a></li>
+                    <!-- other Aldi links -->
+                </ul>
+            </li>
+        </ul>
+    
+        <div id="other-buttons">
+            <i id="search-link" onclick="toggleSearchOverlay()" class="fi-br-search"></i>
+                <!-- 
+                <li id="profile-dropdown">
+                    <a id="account-link" href="account.html"><i class="fi-br-portrait"></i></a>
+                    <ul id="profile-content">
+                        <li><p id="profile-username">test12341234</p></li>
+                        <li><p id="logout" onclick="logout()">Logout <i class="fi-br-sign-out-alt"></i></p></li>
+                    </ul>
+                </li> 
+                -->
+            <a id="shopping-cart" href="cart.html">
+                <i id="cart-link" class="fi-br-shopping-bag"></i>
+                <h1 id="cart-counter">0</h1>
+            </a>
+            <i id="menu-icon" onclick="toggleMobileMenu()" class="fi-br-menu-burger"></i>
+        </div>
+    </section>
+
+    <section id="mobile-overlay">
+        <div id="mobile-menu">
+            <a href="home.html">Home</a>
+            <a href="lidl.html">Lidl</a>
+            <a href="aldi.html">Aldi</a>
+        </div>
+    </section>
+
+    
+
+    <section id="search-overlay">
+        <div id="search-bar">
+            <div id="search-holder">
+                <div id="search-box">
+                    <i class="fi-br-search"></i>
+                    <input id="search-input" type="text" placeholder="Zoekterm invoeren..">
+                    <div id="search-icon">
+                        <i class="fi-br-search"></i>
+                    </div>
+                </div>
+                <div id="suggestions" class="suggestions-list">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="lidl-header">
+        <h2>Lidl Assortiment</h2>
+        <p>2024 / 2025</p>
+    </section>
+
+
+    <section id="product-page">
+        <div id="route">
+            <h1 class="route-active">Lidl vuurwerk</h1>
+        </div>
+
+        <div id="block-container"></div>
+        
+        <div id="product-section">
+            <div id="sidebar">
+                <h1 class="active"><a href="../lidl.html">Lidl vuurwerk</a></h1>
+                <div id="navigation">
+                    <h1 id="nav-cakes"><a href="lidl/cakes.html">Cakes</a></h1>
+                    <h1 id="nav-fonteinen"><a href="lidl/fonteinen.html">Fonteinen</a></h1>
+                    <h1 id="nav-vuurpijlen"><a href="lidl/vuurpijlen.html">Vuurpijlen</a></h1>
+                    <h1 id="nav-knalvuurwerk"><a href="lidl/knalvuurwerk.html">Knalvuurwerk</a></h1>
+                    <h1 id="nav-pakketten"><a href="lidl/pakketten.html">Pakketten</a></h1>
+                    <h1 id="nav-singleshots"><a href="lidl/singleshots.html">Single Shots</a></h1>
+                    <h1 id="nav-overig"><a href="lidl/overig.html">Overig</a></h1>
+                </div>                
+            </div>
+            <div id="product-container">
+                <div id="listing-row">
+                    <div id="page-btn">
+                        <button id="first-page" onclick="changePage(1)"><i class="fi-bs-angle-double-small-left"></i></button>
+                        <button id="prev-page" onclick="prevPage()"><i class="fi-bs-angle-small-left"></i></button>
+                        <button id="link-page"></button>
+                        <button id="next-page" onclick="nextPage()"><i class="fi-bs-angle-small-right"></i></button>
+                        <button id="first-page" onclick="changePage(totalPages)"><i class="fi fi-bs-angle-double-small-right"></i></button>
+                    </div>
+                    <div id="custom-select">
+                        <div class="selected" id="sorting-form">
+                            <h1>Naam A-Z</h1>
+                            <i class="fi-br-angle-down"></i>
+                        </div>
+                        <div id="options">
+                            <div class="option" data-value="1">Nieuwste eerst</div>
+                            <div class="active option" data-value="2">Naam A-Z</div>
+                            <div class="option" data-value="3">Naam Z-A</div>
+                            <div class="option" data-value="4">Prijs stijgt</div>
+                            <div class="option" data-value="5">Prijs Aflopend</div>
+                        </div>
+                    </div>                                     
+                </div>
+                <div id="products-rows">
+                    
+                </div>   
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div id="footer-content">
+            <div id="footer-icons">
+                <i id="tiktok" class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <h1>Blijf op de hoogte van onze socials</h1>
+            <div id="scroll-top" onclick="scrollUp()">
+                <i class="fi-br-angle-up"></i>
+            </div>
+        </div>
+        <h1 id="copyright">© 2024 - 2024 placeholder</h1>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script>
+    // Show or hide the button with a fade and slide effect based on scroll position
+    window.onscroll = function() {
+        const scrollToTopBtn = document.getElementById("scroll-btn");
+        if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+            scrollToTopBtn.style.opacity = "1"; // Fade in
+            scrollToTopBtn.style.transform = "translateY(0)"; // Slide up to position
+        } else {
+            scrollToTopBtn.style.opacity = "0"; // Fade out
+            scrollToTopBtn.style.transform = "translateY(20px)"; // Slide down off-screen
+        }
+    };
+    
+    // Function to scroll to the top smoothly
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    
+</script>
+
+<script>
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobile-overlay");
+    mobileMenu.classList.toggle("active");
+}
+</script>
+
+
+<script>
+
+
+// Search script
+
+document.addEventListener("DOMContentLoaded", clearSearchInput);
+window.addEventListener("pageshow", (event) => {
+    // Check if the page was loaded from the cache
+    if (event.persisted) {
+        clearSearchInput();
+    }
+});
+
+function clearSearchInput() {
+    const searchInput = document.getElementById('search-input');
+    // Set the input value to an empty string to clear it
+    searchInput.value = '';
+}
+
+
+
+
+    function toggleSearchOverlay() {
+        const overlay = document.getElementById('search-overlay');
+        const searchBar = document.getElementById('search-bar');
+    
+        if (overlay.classList.contains('visible')) {
+            // Hide the overlay and search bar
+            searchBar.classList.remove('visible'); // Trigger slide-out and fade-out
+            overlay.classList.remove('visible'); // Hide the overlay
+    
+            // Wait for the transition to finish before hiding the overlay
+            setTimeout(() => {
+                overlay.style.visibility = 'hidden'; // Hide the overlay
+                clearSearchInput();
+            }, 300); // Match this time with your CSS transition duration
+        } else {
+            overlay.style.visibility = 'visible'; // Show the overlay
+            overlay.classList.add('visible'); // Trigger fade-in effect
+            searchBar.classList.add('visible'); // Trigger slide-in effect
+        }
+    }
+    
+    // Add event listener to the overlay to close it on click
+    document.getElementById('search-overlay').addEventListener('click', function(event) {
+        // Check if the overlay is visible
+        if (this.classList.contains('visible')) {
+            toggleSearchOverlay(); // Close the overlay if it's open
+            setTimeout(() => {
+                clearSearchInput();
+            }, 300);
+        }
+    });
+    
+    // Stop event propagation for all children of the overlay
+    const overlayChildren = document.querySelectorAll('#search-overlay *');
+    overlayChildren.forEach(child => {
+        child.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent the overlay from closing
+        });
+    });
+    </script>
+    
+
+<script>
+    let searchProducts = [];
+    
+    // Load products from products.json
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                searchProducts = data; // Load products into the global array
+            })
+            .catch(error => console.error('Error loading products:', error));
+    
+        const searchInput = document.getElementById("search-input");
+        const suggestions = document.getElementById("suggestions");
+        const searchIcon = document.getElementById("search-icon");
+    
+        // Event listener for input to filter suggestions
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase();
+            suggestions.innerHTML = ""; // Clear previous suggestions
+    
+            if (query) {
+                const matchedProducts = searchProducts.filter(product =>
+                    product.name.toLowerCase().includes(query)
+                ).slice(0, 10); // Limit to first 10 matched products
+    
+                matchedProducts.forEach((product, index) => {
+                    const suggestionHolder = document.createElement("div");
+                    suggestionHolder.id = `suggestion-holder`; // Unique ID for each suggestion holder
+    
+                    const suggestionItem = document.createElement("div");
+                    suggestionItem.id = `suggestion-item`; // Unique ID for each suggestion item
+    
+                    // Create and append the image
+                    const suggestionImg = document.createElement("img");
+                    suggestionImg.src = product.image; // Assuming product has an 'image' property
+                    suggestionImg.alt = product.name; // Set alt text
+                    suggestionImg.id = `suggestion-img`; // Unique ID for each image
+                    suggestionItem.appendChild(suggestionImg);
+    
+                    // Create and append the name
+                    const suggestionName = document.createElement("h1");
+                    suggestionName.textContent = product.name;
+                    suggestionName.id = `suggestion-name`; // Unique ID for each name
+                    suggestionItem.appendChild(suggestionName);
+    
+                    // Create and append the price
+                    const suggestionPrice = document.createElement("h2");
+                    suggestionPrice.textContent = `${product.price}`; // Assuming product has a 'price' property
+                    suggestionPrice.id = `suggestion-price`; // Unique ID for each price
+                    suggestionItem.appendChild(suggestionPrice);
+    
+                    // Add click event to redirect
+                    suggestionItem.addEventListener("click", () => {
+                        const productNameWithHyphens = product.name.replace(/\s+/g, '-'); // Replace spaces with hyphens
+                        window.location.href = `/template.html?product=${encodeURIComponent(productNameWithHyphens)}`;
+                    });
+    
+                    suggestionHolder.appendChild(suggestionItem);
+                    suggestions.appendChild(suggestionHolder);
+                });
+    
+                suggestions.style.display = "block"; // Show suggestions list
+            } else {
+                suggestions.style.display = "none"; // Hide suggestions if no query
+            }
+        });
+    
+        // Hide suggestions when clicking outside the input
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest("#search-box")) {
+                suggestions.style.display = "none";
+            }
+        });
+    
+        // Redirect to search results page on clicking search icon
+        searchIcon.addEventListener("click", () => {
+            const query = searchInput.value;
+            if (query) {
+                window.location.href = `/template.html?query=${encodeURIComponent(query)}`;
+            }
+        });
+    });
+</script>
+
+    
+
+
+<script>
+// Sample product data
+const products = [
+    {
+        name: "Discovery",
+        brand: "Weco",
+        price: 2.49,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Magic Djinn",
+        brand: "Nico",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Aligator",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Bloody Brilliant",
+        brand: "Weco",
+        price: 4.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Flashback",
+        brand: "Weco",
+        price: 5.55,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Hellboy",
+        brand: "Weco",
+        price: 5.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Power Box",
+        brand: "Weco",
+        price: 5.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Highway",
+        brand: "Nico",
+        price: 5.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Matrix",
+        brand: "Weco",
+        price: 6.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Uranus",
+        brand: "Weco",
+        price: 7.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Game changer",
+        brand: "Nico",
+        price: 9.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Infinity Fire",
+        brand: "Weco",
+        price: 9.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Stormy Flash",
+        brand: "Weco",
+        price: 13.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Superfly",
+        brand: "Weco",
+        price: 14.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "The New Beastmaster",
+        brand: "Weco",
+        price: 15.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Celebration",
+        brand: "Weco",
+        price: 15.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Daredevil",
+        brand: "Weco",
+        price: 15.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Pyro Sensation",
+        brand: "Nico",
+        price: 16.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Black Ice",
+        brand: "Weco",
+        price: 18.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Big Suprise",
+        brand: "Weco",
+        price: 18.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Gold Finger",
+        brand: "Weco",
+        price: 19.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Master Blaster",
+        brand: "Nico",
+        price: 19.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Pyro Conversion",
+        brand: "Nico",
+        price: 19.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Cosmic Smash",
+        brand: "Nico",
+        price: 19.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Queen of the Night",
+        brand: "Weco",
+        price: 22.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Casino Royale",
+        brand: "Weco",
+        price: 22.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Final Countdown",
+        brand: "Weco",
+        price: 24.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Unforgettable",
+        brand: "Weco",
+        price: 26.99,
+        imgSrc: "",
+        local: 'true'
+    },
+
+
+    // Compounds
+
+    {
+        name: "Fantastic Sky",
+        brand: "Nico",
+        price: 14.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Spotlight",
+        brand: "Weco",
+        price: 19.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Magic Dance",
+        brand: "Weco",
+        price: 24.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Daybreak",
+        brand: "Weco",
+        price: 29.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Showmaster",
+        brand: "Weco",
+        price: 34.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Rising Colours",
+        brand: "Weco",
+        price: 54.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Big Finish",
+        brand: "Weco",
+        price: 79.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Pure Magic",
+        brand: "Weco",
+        price: 79.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Mastermind",
+        brand: "Weco",
+        price: 89.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Fire Dome",
+        brand: "Weco",
+        price: 99.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Colossus",
+        brand: "Weco",
+        price: 99.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Thunder Stroke",
+        brand: "Weco",
+        price: 99.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Legend",
+        brand: "Weco",
+        price: 129.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Cosmopolitan",
+        brand: "Weco",
+        price: 159.99,
+        imgSrc: "",
+        local: 'true'
+    },
+
+    
+    // Fonteinen
+
+    {
+        name: "Laser",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Yin und Yang",
+        brand: "Weco",
+        price: 4.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Vulkan Stars",
+        brand: "Weco",
+        price: 6.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Ocean of lights",
+        brand: "Weco",
+        price: 8.99,
+        imgSrc: "",
+        local: 'false'
+    },
+
+
+    // Vuurpijlen
+
+    {
+        name: "Gold Raketen",
+        brand: "Weco",
+        price: 9.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "High Speed Rockets",
+        brand: "Weco",
+        price: 9.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "High Speed Bombs",
+        brand: "Weco",
+        price: 9.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Phantoms and Ghosts",
+        brand: "Nico",
+        price: 13.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Rocket Clash",
+        brand: "Weco",
+        price: 17.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Arena of Rockets",
+        brand: "Weco",
+        price: 21.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Heroes of Fire",
+        brand: "Nico",
+        price: 24.99,
+        imgSrc: "",
+        local: 'true'
+    },
+
+
+    // Knal vuurwerk
+
+    {
+        name: "Kracher Inferno",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Kubische Kanonenschläge",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+
+
+    // Single shots
+
+    {
+        name: "Flash bang",
+        brand: "Weco",
+        price: 3.49,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Double Flash",
+        brand: "Weco",
+        price: 3.49,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Double Crusher",
+        brand: "Nico",
+        price: 3.49,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Sky Shots",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+
+
+    // Pakketten 
+
+    {
+        name: "Pyro-mix for kids",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Party Animal",
+        brand: "Weco",
+        price: 4.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Leucht-spektakel",
+        brand: "Weco",
+        price: 5.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Super sonic",
+        brand: "Weco",
+        price: 7.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Fire Fantasy",
+        brand: "Weco",
+        price: 8.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "World Champion",
+        brand: "Weco",
+        price: 19.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Jewels of the sky",
+        brand: "Weco",
+        price: 21.99,
+        imgSrc: "",
+        local: 'true'
+    },
+    {
+        name: "Bombette",
+        brand: "Weco",
+        price: 37.99,
+        imgSrc: "",
+        local: 'false'
+    },
+
+
+    // Overig 
+
+    {
+        name: "Party fun-bag",
+        brand: "Weco",
+        price: 2.79,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Zauber Lichten",
+        brand: "Weco",
+        price: 3.49,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Tischfeuerwerk",
+        brand: "Weco",
+        price: 3.99,
+        imgSrc: "",
+        local: 'false'
+    },
+    {
+        name: "Twister",
+        brand: "Weco",
+        price: 5.99,
+        imgSrc: "",
+        local: 'false'
+    },
+
+    // Add more products as needed
+];
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    localStorage.setItem('sortingValue', '2');
+
+});
+
+// Global variable to store the active option
+let activeOption = null;
+
+let currentPage = 1; // Track the current page
+const productsPerPage = 24; // Number of products per page
+
+// Function to display products
+function displayProducts() {
+    const productContainer = document.getElementById('products-rows');
+    productContainer.innerHTML = ''; // Clear existing products
+
+    // Calculate start and end index for slicing the products array
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    const productsToDisplay = products.slice(startIndex, endIndex);
+
+    productsToDisplay.forEach(product => {
+
+        const productLink = encodeURIComponent(product.name.replace(/ /g, '-'));
+
+
+        const productBox = `
+            <div id="product-box">
+                <a href="../template.html?product=${productLink}" class="product-link">
+                    <div id="product-img-box">
+                        ${product.local === 'true' ? `
+                            <div id="alert">
+                                <i class="fi-rr-exclamation" id="exclamation-icon"></i>
+                                <span id="alert-text">Let op! Alleen lokaal beschikbaar</span>
+                            </div>
+                        ` : ''}
+                        <img id="product-img" src="${product.imgSrc}" alt="${productLink}">
+                    </div>
+                    <span class="shop" style="display: none;">Lidl</span>
+                    <h1 id="product-brand">${product.brand}</h1>
+                    <h2 id="product-name">${product.name}</h2>
+                    <h3 id="product-price">€${product.price.toFixed(2)}</h3>
+                </a>
+                <button id="product-cart" onclick="addToCart(event, '${product.name}')">Voeg toe aan lijstje</button>
+            </div>
+        `;
+        productContainer.innerHTML += productBox;
+    });
+
+    // Display pagination controls
+    displayPagination();
+}
+
+// Function to display pagination controls
+// Function to display pagination controls
+function displayPagination() {
+    const paginationContainer = document.getElementById('page-btn');
+    paginationContainer.innerHTML = ''; // Clear existing pagination controls
+
+    const totalPages = Math.ceil(products.length / productsPerPage);
+
+    // Add First and Previous buttons (always visible, disabled when on the first page)
+    paginationContainer.innerHTML += `
+        <button id="first-page" onclick="changePage(1)" ${currentPage === 1 ? 'disabled' : ''}>
+            <i class="fi-bs-angle-double-small-left"></i>
+        </button>
+        <button id="prev-page" onclick="prevPage()" ${currentPage === 1 ? 'disabled' : ''}>
+            <i class="fi-bs-angle-small-left"></i>
+        </button>
+    `;
+
+    // Add page numbers
+    for (let i = 1; i <= totalPages; i++) {
+        paginationContainer.innerHTML += `
+            <button id="link-page" class="${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                ${i}
+            </button>
+        `;
+    }
+
+    // Add Next and Last buttons (always visible, disabled when on the last page)
+    paginationContainer.innerHTML += `
+        <button id="next-page" onclick="nextPage()" ${currentPage === totalPages ? 'disabled' : ''}>
+            <i class="fi-bs-angle-small-right"></i>
+        </button>
+        <button id="last-page" onclick="changePage(${totalPages})" ${currentPage === totalPages ? 'disabled' : ''}>
+            <i class="fi-bs-angle-double-small-right"></i>
+        </button>
+    `;
+}
+
+// Function to change page
+function changePage(page) {
+    currentPage = page;
+    displayProducts();
+}
+
+// Function to go to the previous page
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        displayProducts();
+    }
+}
+
+// Function to go to the next page
+function nextPage() {
+    const totalPages = Math.ceil(products.length / productsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        displayProducts();
+    }
+}
+
+
+// Function to sort products
+function sortProducts(criteria) {
+    if (criteria === "name-asc") {
+        products.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (criteria === "name-desc") {
+        products.sort((a, b) => b.name.localeCompare(a.name));
+    } else if (criteria === "price-asc") {
+        products.sort((a, b) => a.price - b.price);
+    } else if (criteria === "price-desc") {
+        products.sort((a, b) => b.price - a.price);
+    }
+
+    // After sorting, reset to the first page and display the products again
+    currentPage = 1;
+    displayProducts();
+}
+
+
+// Function to toggle dropdown options
+function toggleDropdown() {
+    const options = document.getElementById('options');
+    const isOpen = options.style.display === 'block';
+    options.style.display = isOpen ? 'none' : 'block';
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    displayProducts(); // Show products on page load
+    sortProducts("name-asc"); // Default sorting A-Z
+
+    const sortingTitle = document.getElementById('sorting-form');
+    sortingTitle.addEventListener("click", toggleDropdown); // Toggle dropdown on title click
+
+    const optionElements = document.querySelectorAll('.option'); // Assuming options have this class
+
+    optionElements.forEach(option => {
+        option.addEventListener("click", function () {
+            sortingTitle.querySelector("h1").innerText = option.innerText; // Update displayed text
+            const sortingValue = option.dataset.value; // Get the data-value attribute
+
+            // Call sortProducts based on selected sorting option
+            if (sortingValue == 1) sortProducts("price-desc"); // Nieuwste eerst (assuming newest = highest price)
+            if (sortingValue == 2) sortProducts("name-asc"); // Name A-Z
+            if (sortingValue == 3) sortProducts("name-desc"); // Name Z-A
+            if (sortingValue == 4) sortProducts("price-asc"); // Price Low to High
+            if (sortingValue == 5) sortProducts("price-desc"); // Price High to Low
+
+            // Hide options after selection
+            const options = document.getElementById('options');
+            options.style.display = "none";
+
+            // Remove active class from all options and set it to the selected option
+            optionElements.forEach(opt => opt.classList.remove('active'));
+            option.classList.add('active'); // Add active class to the selected option
+            activeOption = option; // Update the activeOption variable
+        });
+
+        // Remove the active class when hovering over options
+        option.addEventListener('mouseenter', function () {
+            const currentActive = options.querySelector('.active');
+            if (currentActive && currentActive !== option) {
+                currentActive.classList.remove('active');
+            }
+        });
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener("click", function (event) {
+        const options = document.getElementById('options');
+        const sortingForm = document.getElementById('sorting-form');
+
+        // Check if the click was outside the dropdown and title
+        if (options.style.display === "block" && !options.contains(event.target) && !sortingForm.contains(event.target)) {
+            options.style.display = "none"; // Hide options if they are open
+            
+            // Restore the active class to the previously selected option
+            optionElements.forEach(option => {
+                option.classList.remove('active'); // Remove active from all
+            });
+            if (activeOption) {
+                activeOption.classList.add('active'); // Add active to the remembered option
+            }
+        }
+    });
+});
+</script>
+
+<script>
+
+window.onload = function() {
+
+    sessionStorage.setItem('lastVisitedPage', window.location.href);
+    
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+    if (profileDropdown) {
+        const loggedIn = sessionStorage.getItem('loggedIn') === 'true' || localStorage.getItem('loggedIn') === 'true'
+        
+        if (loggedIn) {
+            const click = sessionStorage.getItem('click') === 'true' || localStorage.getItem('click') === 'true'
+            const accountLink = document.getElementById('account-link');
+            document.getElementById('account-link').href = 'javascript:void(0)'
+
+            if (click) {
+                profileDropdown.classList.add('click');
+
+                const username = localStorage.getItem('username');
+                if (username) {
+                    document.getElementById('profile-username').innerText = username;
+                }
+            }
+
+            else {
+                profileDropdown.classList.add('logged-in');
+                
+                // Restore the username from localStorage
+                const username = localStorage.getItem('username');
+                if (username) {
+                    document.getElementById('profile-username').innerText = username;
+                }
+            }
+        }
+
+        else {
+            profileDropdown.classList.remove('click');
+            profileDropdown.classList.remove('logged-in');
+            document.getElementById('account-link').href = 'account.html'
+        }
+
+    }
+};
+
+
+document.addEventListener('click', function(event) {
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+    // Check if the clicked target is not the profile content or its children
+    if (profileDropdown.classList.contains('click') && !profileDropdown.contains(event.target)) {
+        profileDropdown.classList.remove('click');
+        profileDropdown.classList.add('logged-in');
+
+        sessionStorage.setItem('click', 'false');
+        localStorage.setItem('click', 'false');
+    }
+});
+    </script>
+    
+
+</html>

@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        // IMPORTANT: set this in <HEAD> top before any other tag.
+        const setTheme = (theme) => {
+          theme ??= localStorage.theme || "light";
+          document.documentElement.dataset.theme = theme;
+          localStorage.theme = theme;
+        };
+        setTheme();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldi Sud - Discounter Feuerwerk</title>
+
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f6f6445ca5.js" crossorigin="anonymous"></script>
+
+    <script src="preloader.js" defer></script>
+    <script src="darkmode.js" defer></script>
+    <script src="cart.js" defer></script>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <section id="navigation">
+        <div id="nav-content">
+
+            <div id="logo">
+                <img src="img/logo.png" alt="Website Logo">
+            </div>
+
+            <div id="shop-btns">
+                <li><a id="home-link" href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a id="lidl-link" href="lidl.html" onclick="handlePageSwitch(event, this.href)">Lidl <i class="fi-sr-angle-small-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="lidl/cakes.html">Cakes</a></li>
+                        <li><a href="lidl/fonteinen.html">Fonteinen</a></li>
+                        <li><a href="lidl/vuurpijlen.html">Vuurpijlen</a></li>
+                        <li><a href="lidl/knalvuurwerk.html">Knalvuurwerk</a></li>
+                        <li><a href="lidl/pakketten.html">Pakketten</a></li>
+                        <li><a href="lidl/singleshots.html">Single Shots</a></li>
+                        <li><a href="lidl/overig.html">Overig</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="aldi-link" class="active" href="aldi.html" onclick="handlePageSwitch(event, this.href)">Aldi Sud <i class="fi-sr-angle-small-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="aldi/cakes.html">Cakes</a></li>
+                        <li><a href="aldi/fonteinen.html">Fonteinen</a></li>
+                        <li><a href="aldi/vuurpijlen.html">Vuurpijlen</a></li>
+                        <li><a href="aldi/pakketten.html">Pakketten</a></li>
+                        <li><a href="aldi/singleshots.html">Single Shots</a></li>
+                        <li><a href="aldi/overig.html">Overig</a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <div id="other-btns">
+                <i id="search-link" onclick="toggleSearchOverlay()" class="fi-br-search"></i>
+                <a id="shopping-cart" href="cart.html">
+                    <i id="cart-link" class="fi-br-shopping-bag"></i>
+                    <h1 id="cart-counter">0</h1>
+                </a>
+                <i id="menu-link" onclick="toggleSidebar()" class="fi-br-menu-burger"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mobile-sidebar" class="">
+        <div id="sidebar-content" class="">
+            <div id="sidebar-dropdown">
+                <div id="mobile-home-btn">
+                    <a href="#" id="home">Home</a>
+                </div>    
+            </div>
+        
+            <div id="sidebar-dropdown">
+                <div id="mobile-lidl-btn">
+                    <a href="lidl.html" id="menu-item">Lidl</a>
+                    <i onclick="mobileDD(this.parentNode)" class="fi-sr-angle-small-down arrow-icon"></i>
+                </div>
+                <div id="content-dropdown" class="">
+                    <div id="category-btn"><a href="lidl/cakes.html">Cakes</a></div>
+                    <div id="category-btn"><a href="lidl/fonteinen.html">Fonteinen</a></div>
+                    <div id="category-btn"><a href="lidl/vuurpijlen.html">Vuurpijlen</a></div>
+                    <div id="category-btn"><a href="lidl/knalvuurwerk.html">Knalvuurwerk</a></div>
+                    <div id="category-btn"><a href="lidl/pakketten.html">Pakketten</a></div>
+                    <div id="category-btn"><a href="lidl/singleshots.html">Single Shots</a></div>
+                    <div id="category-btn"><a href="lidl/overig.html">Overig</a></div>
+                </div>
+            </div>
+        
+            <div id="sidebar-dropdown">
+                <div id="mobile-aldi-btn">
+                    <a href="aldi.html" id="menu-item" class="menu-item">Aldi Sud</a>
+                    <i onclick="mobileDD(this.parentNode)" class="fi-sr-angle-small-down arrow-icon"></i>
+                </div>
+                <div id="content-dropdown" class="">
+                    <div id="category-btn"><a href="aldi/cakes.html">Cakes</a></div>
+                    <div id="category-btn"><a href="aldi/fonteinen.html">Fonteinen</a></div>
+                    <div id="category-btn"><a href="aldi/vuurpijlen.html">Vuurpijlen</a></div>
+                    <div id="category-btn"><a href="aldi/pakketten.html">Pakketten</a></div>
+                    <div id="category-btn"><a href="aldi/singleshots.html">Single Shots</a></div>
+                    <div id="category-btn"><a href="aldi/overig.html">Overig</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="scroll-top">
+        <div id="scroll-btn" onclick="scrollToTop()">
+            <i class="fi-br-angle-up"></i>
+        </div>
+    </section>
+
+
+    <section id="search-overlay">
+        <div id="search-bar">
+            <div id="search-holder">
+                <div id="search-box">
+                    <i class="fi-br-search"></i>
+                    <input id="search-input" type="text" placeholder="Zoekterm invoeren..">
+                    <div id="search-icon">
+                        <i class="fi-br-search"></i>
+                    </div>
+                </div>
+                <div id="suggestions" class="suggestions-list">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="lidl-header">
+        <h2>Aldi Sud Assortiment</h2>
+        <p>2024 / 2025</p>
+    </section>
+
+    <section id="product-page">
+
+        <div id="route">
+            <a href="../aldi.html"><h1 class="route-active">Aldi Sud vuurwerk</h1></a>
+            <!--
+                <i class="fi-bs-angle-small-right"></i>
+                <h1 class="route-active">Vuurpijlen</h1>
+            -->
+
+            <div id="theme-toggle">
+                <i class="fi-br-brightness"></i>
+                <div class="toggle-button"></div>
+                <i class="fi-br-moon"></i>
+            </div>
+
+        </div>
+
+        <div id="block-container"></div>
+
+        <div id="product-section">
+            <div id="product-sidebar">
+
+                <div id="sidebar-box">
+                    <div id="sidebar-btn">
+                        <a href="lidl.html" id="dropdown-shop">Lidl vuurwerk</a>
+                        <i onclick="sidebarDD(this.parentNode)" class="fi-sr-angle-small-down arrow-icon"></i>
+                    </div>
+                    <div id="category-dropdown">
+                        <div id="category-btn"><a href="lidl/cakes.html">Cakes</a></div>
+                        <div id="category-btn"><a href="lidl/fonteinen.html">Fonteinen</a></div>
+                        <div id="category-btn"><a href="lidl/vuurpijlen.html">Vuurpijlen</a></div>
+                        <div id="category-btn"><a href="lidl/knalvuurwerk.html">Knalvuurwerk</a></div>
+                        <div id="category-btn"><a href="lidl/pakketten.html">Pakketten</a></div>
+                        <div id="category-btn"><a href="lidl/singleshots.html">Single Shots</a></div>
+                        <div id="category-btn"><a href="lidl/overig.html">Overig</a></div>
+                    </div>
+                </div>
+                
+                <div id="sidebar-box">
+                    <div id="sidebar-btn"  class="active">
+                        <a href="aldi.html" id="dropdown-shop">Aldi Sud vuurwerk</a>
+                        <i onclick="sidebarDD(this.parentNode)" class="fi-sr-angle-small-down arrow-icon"></i>
+                    </div>
+                    <div id="category-dropdown">
+                        <div id="category-btn"><a href="aldi/cakes.html">Cakes</a></div>
+                        <div id="category-btn"><a href="aldi/fonteinen.html">Fonteinen</a></div>
+                        <div id="category-btn"><a href="aldi/vuurpijlen.html">Vuurpijlen</a></div>
+                        <div id="category-btn"><a href="aldi/pakketten.html">Pakketten</a></div>
+                        <div id="category-btn"><a href="aldi/singleshots.html">Single Shots</a></div>
+                        <div id="category-btn"><a href="aldi/overig.html">Overig</a></div>
+                    </div>
+                </div>
+            </div>         
+
+            <div id="product-container">
+                <div id="listing-row">
+                    <div id="page-btn-1">
+                        <button id="first-page" onclick="changePage(1)"><i class="fi-bs-angle-double-small-left"></i></button>
+                        <button id="prev-page" onclick="prevPage()"><i class="fi-bs-angle-small-left"></i></button>
+                        <button id="link-page"></button>
+                        <button id="next-page" onclick="nextPage()"><i class="fi-bs-angle-small-right"></i></button>
+                        <button id="first-page" onclick="changePage(totalPages)"><i class="fi fi-bs-angle-double-small-right"></i></button>
+                    </div>
+                    <div id="custom-select">
+                        <div class="selected" id="sorting-form">
+                            <h1>Naam A-Z</h1>
+                            <i class="fi-br-angle-down"></i>
+                        </div>
+                        <div id="options">
+                            <div class="option" data-value="1">Nieuwste eerst</div>
+                            <div class="option" data-value="2">Naam A-Z</div>
+                            <div class="option" data-value="3">Naam Z-A</div>
+                            <div class="option" data-value="4">Prijs stijgt</div>
+                            <div class="option" data-value="5">Prijs Aflopend</div>
+                        </div>
+                    </div>                                     
+                </div>
+                <div id="products-rows">
+
+                </div>   
+                <div id="listing-row">
+                    <div id="page-btn-2">
+                        <button id="first-page" onclick="changePage(1)"><i class="fi-bs-angle-double-small-left"></i></button>
+                        <button id="prev-page" onclick="prevPage()"><i class="fi-bs-angle-small-left"></i></button>
+                        <button id="link-page"></button>
+                        <button id="next-page" onclick="nextPage()"><i class="fi-bs-angle-small-right"></i></button>
+                        <button id="first-page" onclick="changePage(totalPages)"><i class="fi fi-bs-angle-double-small-right"></i></button>
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div id="footer-content">
+            <h1 id="copyright">© 2024 - 2024 placeholder</h1>
+            <div id="footer-icons">
+                <i id="tiktok" class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+<script>
+// Show or hide the button with a fade and slide effect based on scroll position
+window.onscroll = function() {
+    const scrollToTopBtn = document.getElementById("scroll-btn");
+    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+        scrollToTopBtn.style.opacity = "1"; // Fade in
+        scrollToTopBtn.style.transform = "translateY(0)"; // Slide up to position
+    } else {
+        scrollToTopBtn.style.opacity = "0"; // Fade out
+        scrollToTopBtn.style.transform = "translateY(20px)"; // Slide down off-screen
+    }
+};
+
+// Function to scroll to the top smoothly
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+</script>
+
+<script>
+    // Function to handle dropdown toggle
+    function sidebarDD(clickedElement) {
+        const dropdownContent = clickedElement.nextElementSibling;
+        const arrowIcon = clickedElement.querySelector('.arrow-icon');
+
+        dropdownContent.classList.toggle('active');
+        arrowIcon.classList.toggle('active');
+    }
+
+    // Function to open the active dropdown on page load
+    function openActiveDropdowns() {
+        // Check each sidebar box
+        const sidebarBoxes = document.querySelectorAll('#sidebar-box');
+
+        sidebarBoxes.forEach((box) => {
+            const dropdownContent = box.querySelector('#category-dropdown');
+            const categoryButtons = box.querySelectorAll('#category-btn > a');
+
+            // Check if any category link in this box is active
+            const hasActiveCategory = Array.from(categoryButtons).some(link => link.classList.contains('active'));
+
+            if (hasActiveCategory) {
+                dropdownContent.classList.add('active'); // Open dropdown
+                const arrowIcon = box.querySelector('.arrow-icon');
+                arrowIcon.classList.add('active'); // Rotate arrow icon
+            }
+        });
+    }
+
+    // Call the function to open dropdowns on page load
+    document.addEventListener('DOMContentLoaded', openActiveDropdowns);
+</script>
+
+
+
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('mobile-sidebar');
+        const sidebarContent = document.getElementById('sidebar-content');
+        const searchOverlay = document.getElementById('search-overlay');
+
+        // If the search overlay is active, close it
+        if (searchOverlay.classList.contains('visible')) {
+            toggleSearchOverlay(); // Close the search overlay
+        }
+
+        // Toggle the sidebar
+        sidebar.classList.toggle('active');
+        sidebarContent.classList.toggle('active');
+    }
+</script>
+
+<script>
+    function mobileDD(clickedElement) {
+        const dropdownContent = clickedElement.nextElementSibling;
+        const arrowIcon = clickedElement.querySelector('.arrow-icon');
+        const menuItem = clickedElement.querySelector('.menu-item');
+
+        dropdownContent.classList.toggle('active');
+
+        // Toggle rotation by adding/removing active class
+        arrowIcon.classList.toggle('active');
+        menuItem.classList.toggle('active');
+    }
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", clearSearchInput);
+    window.addEventListener("pageshow", (event) => {
+        // Check if the page was loaded from the cache
+        if (event.persisted) {
+            clearSearchInput();
+        }
+    });
+
+
+    function toggleSearchOverlay() {
+    const overlay = document.getElementById('search-overlay');
+    const searchBar = document.getElementById('search-bar');
+    const sidebar = document.getElementById('mobile-sidebar');
+    const searchInput = document.getElementById('search-input');
+
+    // If the sidebar is active, close it
+    if (sidebar.classList.contains('active')) {
+        toggleSidebar(); // Close the sidebar
+    }
+
+    if (overlay.classList.contains('visible')) {
+        // Hide the overlay and search bar
+        searchBar.classList.remove('visible'); // Trigger slide-out and fade-out
+        overlay.classList.remove('visible'); // Hide the overlay
+
+        // Wait for the transition to finish before hiding the overlay
+        setTimeout(() => {
+            overlay.style.visibility = 'hidden'; // Hide the overlay
+            clearSearchInput();
+        }, 300); // Match this time with your CSS transition duration
+    } else {
+        overlay.style.visibility = 'visible'; // Show the overlay
+        overlay.classList.add('visible'); // Trigger fade-in effect
+        searchBar.classList.add('visible'); // Trigger slide-in effect
+        
+        // Focus on the search input to allow typing immediately
+        setTimeout(() => {
+            searchInput.focus();
+        }, 300); // Wait for the animation/transition to complete before focusing
+    }
+}
+
+
+// Clear search input when the page is loaded
+function clearSearchInput() {
+    const searchInput = document.getElementById('search-input');
+    searchInput.value = '';
+}
+
+document.getElementById('search-overlay').addEventListener('click', function(event) {
+    // Check if the click happened directly on the overlay (not on any child elements)
+    if (event.target === this && this.classList.contains('visible')) {
+        toggleSearchOverlay(); // Close the overlay if it's open
+        setTimeout(() => {
+            clearSearchInput();
+        }, 300);
+    }
+});
+
+
+let searchProducts = [];
+    
+    // Load products from products.json
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                searchProducts = data; // Load products into the global array
+            })
+            .catch(error => console.error('Error loading products:', error));
+    
+        const searchInput = document.getElementById("search-input");
+        const suggestions = document.getElementById("suggestions");
+        const searchIcon = document.getElementById("search-icon");
+    
+        // Event listener for input to filter suggestions
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase();
+            suggestions.innerHTML = ""; // Clear previous suggestions
+    
+            if (query) {
+                const matchedProducts = searchProducts.filter(product =>
+                    product.name.toLowerCase().includes(query)
+                ).slice(0, 10); // Limit to first 10 matched products
+    
+                matchedProducts.forEach((product, index) => {
+                    const suggestionHolder = document.createElement("div");
+                    suggestionHolder.id = `suggestion-holder`; // Unique ID for each suggestion holder
+    
+                    const suggestionItem = document.createElement("div");
+                    suggestionItem.id = `suggestion-item`; // Unique ID for each suggestion item
+    
+                    // Create and append the image
+                    const suggestionImg = document.createElement("img");
+                    suggestionImg.src = product.image; // Assuming product has an 'image' property
+                    suggestionImg.alt = product.name; // Set alt text
+                    suggestionImg.id = `suggestion-img`; // Unique ID for each image
+                    suggestionItem.appendChild(suggestionImg);
+    
+                    // Create and append the name
+                    const suggestionName = document.createElement("h1");
+                    suggestionName.textContent = product.name;
+                    suggestionName.id = `suggestion-name`; // Unique ID for each name
+                    suggestionItem.appendChild(suggestionName);
+    
+                    // Create and append the price
+                    const suggestionPrice = document.createElement("h2");
+                    suggestionPrice.textContent = `${product.price}`; // Assuming product has a 'price' property
+                    suggestionPrice.id = `suggestion-price`; // Unique ID for each price
+                    suggestionItem.appendChild(suggestionPrice);
+    
+                    // Add click event to redirect
+                    suggestionItem.addEventListener("click", () => {
+                        const productNameWithHyphens = product.name.replace(/\s+/g, '-'); // Replace spaces with hyphens
+                        window.location.href = `/template.html?product=${encodeURIComponent(productNameWithHyphens)}`;
+                    });
+    
+                    suggestionHolder.appendChild(suggestionItem);
+                    suggestions.appendChild(suggestionHolder);
+                });
+    
+                suggestions.style.display = "block"; // Show suggestions list
+            } else {
+                suggestions.style.display = "none"; // Hide suggestions if no query
+            }
+        });
+
+                // Hide suggestions when clicking outside the input
+                document.addEventListener("click", (event) => {
+            if (!event.target.closest("#search-box")) {
+                suggestions.style.display = "none";
+            }
+        });
+
+    // Redirect to search results page on clicking search icon
+    searchIcon.addEventListener("click", () => {
+        const query = searchInput.value;
+        if (query) {
+            window.location.href = `/template.html?query=${encodeURIComponent(query)}`;
+        }
+    });
+});
+
+</script>
+
+    
+
+
+<script>
+// Sample product data
+const products = [
+    {
+        name: "Eruption",
+        brand: "Weco",
+        price: "2.29",
+        imgSrc: "img/aldi/Eruption.jpg",
+        local: "false",
+    },
+    {
+        name: "Artus",
+        brand: "Weco",
+        price: "2.79",
+        imgSrc: "img/aldi/Artus.jpg",
+        local: "false",
+    },
+    {
+        name: "Poison",
+        brand: "Weco",
+        price: "3.29",
+        imgSrc: "img/aldi/Poison.jpg",
+        local: "false",
+    },
+    {
+        name: "Parzival",
+        brand: "Weco",
+        price: "6.99",
+        imgSrc: "img/aldi/Parzival.jpg",
+        local: "false",
+    },
+    {
+        name: "Van Gogh",
+        brand: "Weco",
+        price: "7.99",
+        imgSrc: "img/aldi/Van-Gogh.jpg",
+        local: "false",
+    },
+    {
+        name: "Kopernikus",
+        brand: "Weco",
+        price: "12.99",
+        imgSrc: "img/aldi/Kopernikus.jpg",
+        local: "false",
+    },
+    {
+        name: "Galaxy",
+        brand: "Weco",
+        price: "12.99",
+        imgSrc: "img/aldi/Galaxy.jpg",
+        local: "false",
+    },
+    {
+        name: "Skyblaze",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Witchcraft",
+        brand: "Weco",
+        price: "16.99",
+        imgSrc: "img/aldi/Witchcraft.jpg",
+        local: "false",
+    },
+    {
+        name: "Rockstar",
+        brand: "Weco",
+        price: "17.99",
+        imgSrc: "img/aldi/Rockstar.jpg",
+        local: "false",
+    },
+    {
+        name: "Barracuda",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/aldi/Bara-Cuda.jpg",
+        local: "false",
+    },
+    {
+        name: "Heavy Metal Reloaded",
+        brand: "Weco",
+        price: "18.99",
+        imgSrc: "img/aldi/Heavy-Metal-Reloaded.jpg",
+        local: "false",
+    },
+    {
+        name: "Blowout",
+        brand: "Weco",
+        price: "19.99",
+        imgSrc: "img/aldi/Blow-Out.jpg",
+        local: "false",
+    },
+    {
+        name: "Rowdy",
+        brand: "Weco",
+        price: "29.99",
+        imgSrc: "img/aldi/Rowdy.jpg",
+        local: "false",
+    },
+
+
+
+    {
+        name: "Valhalla",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Midnight Hunter",
+        brand: "Weco",
+        price: "19.99",
+        imgSrc: "img/aldi/Midnight-Hunter.jpg",
+        local: "false",
+    },
+    {
+        name: "Final Showdown",
+        brand: "Weco",
+        price: "34.99",
+        imgSrc: "img/aldi/Final-Showdown.jpg",
+        local: "false",
+    },
+    {
+        name: "Dreamcatcher",
+        brand: "Weco",
+        price: "39.99",
+        imgSrc: "img/aldi/Dreamcatcher.jpg",
+        local: "false",
+    },
+    {
+        name: "Sky of Diamonds",
+        brand: "Weco",
+        price: "59.99",
+        imgSrc: "img/aldi/Sky-of-Diamonds.jpg",
+        local: "false",
+    },
+    {
+        name: "Euphorica",
+        brand: "Weco",
+        price: "99.99",
+        imgSrc: "img/aldi/Euphorica.jpg",
+        local: "true",
+    },
+
+
+
+    {
+        name: "Hornito",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Magma Monster",
+        brand: "Weco",
+        price: "6.99",
+        imgSrc: "img/aldi/Magma-Monster.jpg",
+        local: "false",
+    },
+
+
+
+    {
+        name: "Ivanhoe & Viel Gluck",
+        brand: "Weco",
+        price: "9.99",
+        imgSrc: "img/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Lancelot",
+        brand: "Weco",
+        price: "19.99",
+        imgSrc: "img/aldi/Lancelot.jpg",
+        local: "false",
+    },
+
+
+
+    {
+        name: "Double Power",
+        brand: "Weco",
+        price: "3.49",
+        imgSrc: "img/aldi/Double-Power.jpg",
+        local: "false",
+    },
+
+
+
+    {
+        name: "Star Hunter",
+        brand: "Weco",
+        price: "4.69",
+        imgSrc: "img/aldi/Star-Hunter.jpg",
+        local: "false",
+    },
+    {
+        name: "Schatzinsel",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/aldi/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Rainbow road",
+        brand: "Weco",
+        price: "???",
+        imgSrc: "img/Temp-Image.jpg",
+        local: "false",
+    },
+    {
+        name: "Jackpot",
+        brand: "Weco",
+        price: "9.99",
+        imgSrc: "img/aldi/Jackpot.jpg",
+        local: "false",
+    },
+    {
+        name: "Art of Light",
+        brand: "Weco",
+        price: "17.99",
+        imgSrc: "img/aldi/Art-of-light.jpg",
+        local: "false",
+    },
+    {
+        name: "Camelot",
+        brand: "Weco",
+        price: "19.99",
+        imgSrc: "img/aldi/Camelot.jpg",
+        local: "false",
+    },
+
+    // Add more products as needed
+];
+
+
+let currentPage = 1; // Track the current page
+const productsPerPage = 24; // Number of products per page
+
+
+// Function to display products
+function displayProducts() {
+    const productContainer = document.getElementById('products-rows');
+    productContainer.innerHTML = ''; // Clear existing products
+
+    // Calculate start and end index for slicing the products array
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    const productsToDisplay = products.slice(startIndex, endIndex);
+
+    productsToDisplay.forEach(product => {
+        const productLink = encodeURIComponent(product.name.replace(/ /g, '-'));
+
+        const productBox = document.createElement('div');
+        productBox.id = 'product-box';
+        productBox.style.visibility = 'hidden'; // Hide product initially
+
+        productBox.innerHTML = `
+            <a href="../template.html?product=${productLink}" class="product-link">
+                <div id="product-img-box">
+                    ${product.local === 'true' ? `
+                        <div id="alert">
+                            <i class="fi-rr-exclamation" id="exclamation-icon"></i>
+                            <span id="alert-text">Let op! Alleen lokaal beschikbaar</span>
+                        </div>
+                    ` : ''}
+                    <img id="product-img" src="${product.imgSrc}" alt="${productLink}">
+                </div>
+                <span class="shop" style="display: none;">Lidl</span>
+                <h1 id="product-brand">${product.brand}</h1>
+                <h2 id="product-name">${product.name}</h2>
+                <h3 id="product-price">€${product.price}</h3>
+            </a>
+            <button id="product-cart" onclick="addToCart(event, '${product.name}')">Voeg toe aan lijstje</button>
+        `;
+
+        const img = productBox.querySelector('#product-img');
+        img.onload = () => {
+            productBox.style.visibility = 'visible'; // Show product when image is loaded
+        };
+        img.onerror = () => {
+            console.error(`Failed to load image: ${img.src}`);
+            productBox.style.visibility = 'visible'; // Still show the product even if the image fails
+        };
+
+        productContainer.appendChild(productBox);
+    });
+
+    // Display pagination controls
+    displayPagination();
+}
+
+
+// Function to display pagination controls
+function displayPagination(containerId) {
+    const paginationContainer = document.getElementById(containerId);
+    if (!paginationContainer) return; // Ensure the container exists
+
+    paginationContainer.innerHTML = ''; // Clear existing pagination controls
+
+    const totalPages = Math.ceil(products.length / productsPerPage);
+
+    // Add First and Previous buttons (always visible, disabled when on the first page)
+    paginationContainer.innerHTML += `
+        <button id="first-page-${containerId}" onclick="changePage(1, '${containerId}')" ${currentPage === 1 ? 'disabled' : ''}>
+            <i class="fi-bs-angle-double-small-left"></i>
+        </button>
+        <button id="prev-page-${containerId}" onclick="prevPage('${containerId}')" ${currentPage === 1 ? 'disabled' : ''}>
+            <i class="fi-bs-angle-small-left"></i>
+        </button>
+    `;
+
+    // Add page numbers
+    for (let i = 1; i <= totalPages; i++) {
+        paginationContainer.innerHTML += `
+            <button id="link-page-${containerId}" class="${i === currentPage ? 'active' : ''}" onclick="changePage(${i}, '${containerId}')">
+                ${i}
+            </button>
+        `;
+    }
+
+    // Add Next and Last buttons (always visible, disabled when on the last page)
+    paginationContainer.innerHTML += `
+        <button id="next-page-${containerId}" onclick="nextPage('${containerId}')" ${currentPage === totalPages ? 'disabled' : ''}>
+            <i class="fi-bs-angle-small-right"></i>
+        </button>
+        <button id="last-page-${containerId}" onclick="changePage(${totalPages}, '${containerId}')" ${currentPage === totalPages ? 'disabled' : ''}>
+            <i class="fi-bs-angle-double-small-right"></i>
+        </button>
+    `;
+}
+
+// Function to change page
+function changePage(page, containerId) {
+    currentPage = page;
+    displayProducts();
+    displayPagination(containerId); // Update the specific pagination container
+    displayPagination(containerId === 'page-btn-1' ? 'page-btn-2' : 'page-btn-1'); // Update the other pagination container
+}
+
+// Function to go to the previous page
+function prevPage(containerId) {
+    if (currentPage > 1) {
+        currentPage--;
+        displayProducts();
+        displayPagination(containerId);
+        displayPagination(containerId === 'page-btn-1' ? 'page-btn-2' : 'page-btn-1');
+    }
+}
+
+// Function to go to the next page
+function nextPage(containerId) {
+    const totalPages = Math.ceil(products.length / productsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        displayProducts();
+        displayPagination(containerId);
+        displayPagination(containerId === 'page-btn-1' ? 'page-btn-2' : 'page-btn-1');
+    }
+}
+
+// Initialize both pagination containers
+displayPagination('page-btn-1'); // First pagination container
+displayPagination('page-btn-2'); // Second pagination container
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Retrieve the saved sorting option from localStorage or set to default
+    const savedSortingValue = localStorage.getItem('sortingValue') || '2';
+    activeOption = document.querySelector(`.option[data-value="${savedSortingValue}"]`);
+
+    if (activeOption) {
+        activeOption.classList.add('active'); // Set saved option as active
+        const sortingTitle = document.getElementById('sorting-form').querySelector("h1");
+        sortingTitle.innerText = activeOption.innerText; // Update the dropdown title text
+        applySortBasedOnValue(savedSortingValue);
+    } else {
+        sortProducts("name-asc"); // Default sorting A-Z if no saved option
+    }
+
+    displayProducts(); // Show products on page load
+
+    const sortingTitle = document.getElementById('sorting-form');
+    sortingTitle.addEventListener("click", toggleDropdown); // Toggle dropdown on title click
+
+    const optionElements = document.querySelectorAll('.option');
+
+    optionElements.forEach(option => {
+        option.addEventListener("click", function () {
+            sortingTitle.querySelector("h1").innerText = option.innerText; // Update displayed text
+            const sortingValue = option.dataset.value;
+
+            // Save the selected sorting option to localStorage
+            localStorage.setItem('sortingValue', sortingValue);
+
+            // Call sortProducts based on selected sorting option
+            applySortBasedOnValue(sortingValue);
+
+            // Hide options after selection
+            const options = document.getElementById('options');
+            options.style.display = "none";
+
+            // Remove active class from all options and set it to the selected option
+            optionElements.forEach(opt => opt.classList.remove('active'));
+            option.classList.add('active');
+            activeOption = option;
+        });
+
+        // Remove the active class when hovering over options
+        option.addEventListener('mouseenter', function () {
+            const currentActive = document.getElementById('options').querySelector('.active');
+            if (currentActive && currentActive !== option) {
+                currentActive.classList.remove('active');
+            }
+        });
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener("click", function (event) {
+        const options = document.getElementById('options');
+        const sortingForm = document.getElementById('sorting-form');
+
+        // Check if the click was outside the dropdown and title
+        if (options.style.display === "block" && !options.contains(event.target) && !sortingForm.contains(event.target)) {
+            options.style.display = "none";
+            
+            // Restore the active class to the previously selected option
+            optionElements.forEach(option => option.classList.remove('active'));
+            if (activeOption) {
+                activeOption.classList.add('active');
+            }
+        }
+    });
+});
+
+// Helper function to apply sorting based on saved or selected value
+function applySortBasedOnValue(sortingValue) {
+    if (sortingValue == 1) sortProducts("price-desc"); // Nieuwste eerst (highest price)
+    if (sortingValue == 2) sortProducts("name-asc");   // Name A-Z
+    if (sortingValue == 3) sortProducts("name-desc");  // Name Z-A
+    if (sortingValue == 4) sortProducts("price-asc");  // Price Low to High
+    if (sortingValue == 5) sortProducts("price-desc"); // Price High to Low
+}
+
+// Function to sort products
+function sortProducts(criteria) {
+    if (criteria === "name-asc") {
+        products.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (criteria === "name-desc") {
+        products.sort((a, b) => b.name.localeCompare(a.name));
+    } else if (criteria === "price-asc") {
+        products.sort((a, b) => a.price - b.price);
+    } else if (criteria === "price-desc") {
+        products.sort((a, b) => b.price - a.price);
+    }
+
+    // After sorting, reset to the first page and display the products again
+    currentPage = 1;
+    displayProducts();
+}
+
+// Function to toggle dropdown options
+function toggleDropdown(event) {
+    const options = document.getElementById('options');
+    const isOpen = options.style.display === 'block';
+    
+    // If dropdown is open, don't close it if clicked on the sorting title
+    if (!isOpen && event.target) {
+        options.style.display = 'block'; // Open the dropdown
+    } else if (isOpen && event.target) {
+        options.style.display = 'none'; // Close the dropdown
+        activeOption.classList.add('active'); // Add active to the remembered option
+    }
+}
+
+
+</script>
+
+<script>
+
+window.onload = function() {
+
+    sessionStorage.setItem('lastVisitedPage', window.location.href);
+    
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+    if (profileDropdown) {
+        const loggedIn = sessionStorage.getItem('loggedIn') === 'true' || localStorage.getItem('loggedIn') === 'true'
+        
+        if (loggedIn) {
+            const click = sessionStorage.getItem('click') === 'true' || localStorage.getItem('click') === 'true'
+            const accountLink = document.getElementById('account-link');
+            document.getElementById('account-link').href = 'javascript:void(0)'
+
+            if (click) {
+                profileDropdown.classList.add('click');
+
+                const username = localStorage.getItem('username');
+                if (username) {
+                    document.getElementById('profile-username').innerText = username;
+                }
+            }
+
+            else {
+                profileDropdown.classList.add('logged-in');
+                
+                // Restore the username from localStorage
+                const username = localStorage.getItem('username');
+                if (username) {
+                    document.getElementById('profile-username').innerText = username;
+                }
+            }
+        }
+
+        else {
+            profileDropdown.classList.remove('click');
+            profileDropdown.classList.remove('logged-in');
+            document.getElementById('account-link').href = 'account.html'
+        }
+
+    }
+};
+
+
+document.addEventListener('click', function(event) {
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+        // Check if the clicked target is not the profile content or its children
+        if (profileDropdown.classList.contains('click') && !profileDropdown.contains(event.target)) {
+            profileDropdown.classList.remove('click');
+            profileDropdown.classList.add('logged-in');
+
+            sessionStorage.setItem('click', 'false');
+            localStorage.setItem('click', 'false');
+        }
+    });
+</script>

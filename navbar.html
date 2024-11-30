@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f6f6445ca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css"> <!-- Make sure this points to your CSS file -->
+    <script src="cart.js" defer></script>
+</head>
+
+<body>
+
+<section>
+    <div id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="Website Logo">
+        </div>
+        <ul id="navbar-buttons">
+            <li><a id="home-link" class="active" href="#">Home</a></li>
+            <li class="dropdown">
+                <a id="lidl-link" href="#">Lidl <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Lidl Item 1</a></li>
+                    <li><a href="#">Lidl Item 2</a></li>
+                    <li><a href="#">Lidl Item 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a id="aldi-link" href="#">Aldi <i class="fi-sr-angle-small-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Aldi Item 1</a></li>
+                    <li><a href="#">Aldi Item 2</a></li>
+                    <li><a href="#">Aldi Item 3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="other-buttons">
+            <i id="search-link" class="fi-br-search"></i>
+            <i id="account-link" class="fi-br-portrait"></i>
+            <div id="shopping-cart">
+                <i id="cart-link" class="fi-br-shopping-bag"></i>
+                <h1 id="cart-counter">0</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

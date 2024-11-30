@@ -1,0 +1,2715 @@
+[
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Discovery",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "2.49",
+
+        "kruid": "ca. 55 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "14",
+        "brandduur": "20",
+
+        "image": "../../img/lidl/Discovery.jpg",
+        "videoId": "k7KyzsIx4GM"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Magic Djinn",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "ca. 64 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "14",
+        "brandduur": "30",
+
+        "image": "../../img/lidl/Magic-Djinn.jpg",
+        "videoId": "mIkONT6OSx4"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Aligator",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "ca. 85 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "15 schoten",
+        "kaliber": "18",
+        "brandduur": "25",
+
+        "image": "../../img/lidl/Aligator.jpg",
+        "videoId": "qz5Ume664nI"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Bloody Brilliant",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "4.99",
+
+        "kruid": "ca. 120 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "12 schoten",
+        "kaliber": "20",
+        "brandduur": "25",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "ck9xAwdilLM"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Flashback",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "5.55",
+
+        "kruid": "ca. 58 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "100 schoten",
+        "kaliber": "8",
+        "brandduur": "38",
+
+        "image": "../../img/Temp-Image.",
+        "videoId": "jPkwl4hOrIQ"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Hellboy",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "5.99",
+
+        "kruid": "ca. 107 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "20",
+        "brandduur": "25",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "PXnx9o8LZRk"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Power Box",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "5.99",
+
+        "kruid": "ca. 175 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "100 schoten",
+        "kaliber": "1",
+        "brandduur": "50",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "0yhsPVCihuM"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+
+        "name": "Highway",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "5.99",
+
+        "kruid": "ca. 39 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "180 schoten",
+        "kaliber": "8",
+        "brandduur": "25",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "TOfuOWZDy6w"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Matrix",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "6.99",
+
+        "kruid": "ca. 150 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "54 schoten",
+        "kaliber": "15",
+        "brandduur": "30",
+
+        "image": "../../img/lidl/Matrix.jpg",
+        "videoId": "VIDjRS4eqPo"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Uranus",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "7.99",
+
+        "kruid": "ca. 143 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "83 schoten",
+        "kaliber": "15",
+        "brandduur": "35",
+
+        "image": "../../img/lidl/Uranus.jpg",
+        "videoId": "5Ai9LQOqMI4"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Game changer",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "ca. 149 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "111 schoten",
+        "kaliber": "15",
+        "brandduur": "50",
+
+        "image": "../../img/lidl/Game-Changer.jpg",
+        "videoId": "kyNCIsHrD1s"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Infinity Fire",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "ca. 254 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "36 schoten",
+        "kaliber": "20",
+        "brandduur": "40",
+
+        "image": "../../img/lidl/Infinity-Fire.jpg",
+        "videoId": "IPiYxDqt06E"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Stormy Flash",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "13.99",
+
+        "kruid": "ca. 243 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "13 schoten",
+        "kaliber": "30",
+        "brandduur": "25",
+
+        "image": "../../img/lidl/Stormy-Flash.jpg",
+        "videoId": "scwPX322ifA"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Superfly",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "14.99",
+
+        "kruid": "ca. 340 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "45 schoten",
+        "kaliber": "20",
+        "brandduur": "25",
+
+        "image": "../../img/lidl/Superfly.jpg",
+        "videoId": "0bcR4SGcKeY"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "The New Beastmaster",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "15.99",
+
+        "kruid": "ca. 432 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "18 schoten",
+        "kaliber": "30",
+        "brandduur": "30",
+
+        "image": "../../img/lidl/The-new-Beastmaster.jpg",
+        "videoId": "hDxs17fesBk"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Celebration",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "15.99",
+
+        "kruid": "ca. 345 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "104 schoten",
+        "kaliber": "18",
+        "brandduur": "50",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "hNDPFB3dB54"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Daredevil",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "15.99",
+
+        "kruid": "ca. 485 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "31 schoten",
+        "kaliber": "25",
+        "brandduur": "35",
+
+        "image": "../../img/lidl/Daredevil.jpg",
+        "videoId": "D68IhsnlCNA"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Pyro Sensation",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "16.99",
+
+        "kruid": "ca. 338 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "50 schoten",
+        "kaliber": "20",
+        "brandduur": "40",
+
+        "image": "../../img/lidl/Pyro-Sensation.jpg",
+        "videoId": "IJv-1RBFdE0"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Black Ice",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "18.99",
+
+        "kruid": "ca. 405 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "47 schoten",
+        "kaliber": "20",
+        "brandduur": "40",
+
+        "image": "../../img/lidl/Black-Ice.jpg",
+        "videoId": "z1DdqKAiaSU"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Big Surprise",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "18.99",
+
+        "kruid": "ca. 400 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "51 schoten",
+        "kaliber": "20",
+        "brandduur": "35",
+
+        "image": "../../img/lidl/Big-Surprise.jpg",
+        "videoId": "YoQJqofRpWk"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Gold Finger",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 498 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "21 schoten",
+        "kaliber": "30",
+        "brandduur": "40",
+
+        "image": "../../img/lidl/Gold-Finger.jpg",
+        "videoId": "epCYXtIvLdo"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Master Blaster",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 307 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "376 schoten",
+        "kaliber": "19",
+        "brandduur": "100",
+
+        "image": "../../img/lidl/Master-Blaster.jpg",
+        "videoId": "YXq8m4rPCjk"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Pyro Conversion",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 373 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "24 schoten",
+        "kaliber": "30",
+        "brandduur": "100",
+
+        "image": "../../img/lidl/Pyro-Conversion.jpg",
+        "videoId": "ThwxxmmGXyQ"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Cosmic Smash",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 382 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "104 schoten",
+        "kaliber": "18",
+        "brandduur": "55",
+
+        "image": "../../img/lidl/Cosmic-Smash.jpg",
+        "videoId": "bfdhpo6oYkc"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Queen of the Night",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "22.99",
+
+        "kruid": "ca. 500 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "36 schoten",
+        "kaliber": "25",
+        "brandduur": "120",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Casino Royale",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "22.99",
+
+        "kruid": "ca. 500 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "36 schoten",
+        "kaliber": "25",
+        "brandduur": "120",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "I7nIosG3T00"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Final Countdown",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "24.99",
+
+        "kruid": "ca. 493 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "72 schoten",
+        "kaliber": "20",
+        "brandduur": "60",
+
+        "image": "../../img/lidl/Final-Countdown.jpg",
+        "videoId": "pvVhTAiYIIs"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shopname": "Lidl",
+        "cartplace": "lidl",
+
+        "name": "Unforgettable",
+        "local": "true",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "26.99",
+
+        "kruid": "ca. 496 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "56 schoten",
+        "kaliber": "25",
+        "brandduur": "50",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "uNagmvNEyXQ"
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Fantastic Sky",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "14.99",
+
+        "kruid": "ca. 163 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "87 schoten",
+        "kaliber": "24",
+        "brandduur": "55",
+
+        "image": "",
+        "videoId": "5YHr5mcaCN4",
+        "thumbnail": "https://img.youtube.com/vi/5YHr5mcaCN4/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Spotlight",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 451 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "152 schoten",
+        "kaliber": "",
+        "brandduur": "65",
+
+        "image": "",
+        "videoId": "Cwt0GW",
+        "thumbnail": "https://img.youtube.com/vi/Cwt0GW/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Magic Dance",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "24.99",
+
+        "kruid": "ca. 478 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "82 schoten",
+        "kaliber": "",
+        "brandduur": "75",
+
+        "image": "",
+        "videoId": "jtmU9v8OMy4",
+        "thumbnail": "https://img.youtube.com/vi/jtmU9v8OMy4/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Daybreak",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "29.99",
+
+        "kruid": "ca. 542 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "153 schoten",
+        "kaliber": "",
+        "brandduur": "70",
+
+        "image": "",
+        "videoId": "FcQ4zyuuPqY",
+        "thumbnail": "https://img.youtube.com/vi/FcQ4zyuuPqY/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Showmaster",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "34.99",
+
+        "kruid": "ca. 545 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "167 schoten",
+        "kaliber": "",
+        "brandduur": "85",
+
+        "image": "",
+        "videoId": "uQVnsdj1eKw",
+        "thumbnail": "https://img.youtube.com/vi/uQVnsdj1eKw/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Rising Colours",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "54.99",
+
+        "kruid": "ca. 993 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "93 schoten",
+        "kaliber": "",
+        "brandduur": "110",
+
+        "image": "",
+        "videoId": "FA7CMLA0cAM",
+        "thumbnail": "https://img.youtube.com/vi/FA7CMLA0cAM/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Big Finish",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "79.99",
+
+        "kruid": "ca. 1790 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "240 schoten",
+        "kaliber": "20",
+        "brandduur": "100",
+
+        "image": "",
+        "videoId": "YHJScpMY0hs",
+        "thumbnail": "https://img.youtube.com/vi/YHJScpMY0hs/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Pure Magic",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "79.99",
+
+        "kruid": "ca. 1618 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "135 schoten",
+        "kaliber": "",
+        "brandduur": "85",
+
+        "image": "",
+        "videoId": "ie867zPUzL0",
+        "thumbnail": "https://img.youtube.com/vi/ie867zPUzL0/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Mastermind",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "89.99",
+
+        "kruid": "ca. 1786 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "144 schoten",
+        "kaliber": "",
+        "brandduur": "100",
+
+        "image": "",
+        "videoId": "AabQ-FAjXPk",
+        "thumbnail": "https://img.youtube.com/vi/AabQ-FAjXPk/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Fire Dome",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "99.99",
+
+        "kruid": "ca. 1790 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "108 schoten",
+        "kaliber": "",
+        "brandduur": "98",
+
+        "image": "",
+        "videoId": "DlcaqNTFHf8",
+        "thumbnail": "https://img.youtube.com/vi/DlcaqNTFHf8/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Colossus",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "99.99",
+
+        "kruid": "ca. 1834 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "200 schoten",
+        "kaliber": "",
+        "brandduur": "100",
+
+        "image": "",
+        "videoId": "cMY2a6YLnIQ",
+        "thumbnail": "https://img.youtube.com/vi/cMY2a6YLnIQ/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Thunder Stroke",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "99.99",
+
+        "kruid": "ca. 1791 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "139 schoten",
+        "kaliber": "",
+        "brandduur": "70",
+
+        "image": "",
+        "videoId": "AsuWO8YILEY",
+        "thumbnail": "https://img.youtube.com/vi/AsuWO8YILEY/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Legend",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "129.99",
+
+        "kruid": "ca. 1867 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "304 schoten",
+        "kaliber": "",
+        "brandduur": "160",
+
+        "image": "",
+        "videoId": "0kYtjSqjzIM",
+        "thumbnail": "https://img.youtube.com/vi/0kYtjSqjzIM/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Cosmopolitan",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "159.99",
+
+        "kruid": "ca. 3432 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "480 schoten",
+        "kaliber": "",
+        "brandduur": "230",
+
+        "image": "",
+        "videoId": "yUcJZ63JlIw",
+        "thumbnail": "https://img.youtube.com/vi/yUcJZ63JlIw/hqdefault.jpg"
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Laser",
+        "local": "false",
+        "category": "Fonteinen",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "ca. 134 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "18",
+        "brandduur": "70",
+
+        "image": "",
+        "videoId": "bRhIfiv5-_0",
+        "thumbnail": "https://img.youtube.com/vi/bRhIfiv5-_0/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Yin und Yang",
+        "local": "false",
+        "category": "Fonteinen",
+        "type": "Cat 2",
+        "price": "4.99",
+
+        "kruid": "ca. 90 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "22",
+        "brandduur": "45",
+
+        "image": "",
+        "videoId": "iQQj04reni4",
+        "thumbnail": "https://img.youtube.com/vi/iQQj04reni4/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Vulkan Stars",
+        "local": "false",
+        "category": "Fonteinen",
+        "type": "Cat 2",
+        "price": "6.99",
+
+        "kruid": "ca. 250 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "50",
+
+        "image": "",
+        "videoId": "7I-M70H7g7g",
+        "thumbnail": "https://img.youtube.com/vi/7I-M70H7g7g/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Ocean of lights",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "8.99",
+
+        "kruid": "ca. 133 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "120",
+
+        "image": "",
+        "videoId": "t4sgoNNtQIA",
+        "thumbnail": "https://img.youtube.com/vi/t4sgoNNtQIA/hqdefault.jpg"
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Gold Raketen",
+        "local": "false",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "6",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "7UCGhlUgBNo",
+        "thumbnail": "https://img.youtube.com/vi/7UCGhlUgBNo/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "High Speed Rockets",
+        "local": "true",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "8",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "zMVVkr925Rk",
+        "thumbnail": "https://img.youtube.com/vi/zMVVkr925Rk/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "High Speed Bombs",
+        "local": "true",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "8",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "mLuS9rMoIig",
+        "thumbnail": "https://img.youtube.com/vi/mLuS9rMoIig/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Phantoms and Ghosts",
+        "local": "false",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "13.99",
+
+        "kruid": "",
+        "importeur": "Nico",
+        "delen": "11",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "5iV8JlJQQAA",
+        "thumbnail": "https://img.youtube.com/vi/5iV8JlJQQAA/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Rocket Clash",
+        "local": "false",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "17.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "12",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "LEDum5oTmps",
+        "thumbnail": "https://img.youtube.com/vi/LEDum5oTmps/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Arena of Rockets",
+        "local": "true",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "21.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "20",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "IDEQrdhYPso",
+        "thumbnail": "https://img.youtube.com/vi/IDEQrdhYPso/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Heroes of Fire",
+        "local": "true",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "24.99",
+
+        "kruid": "",
+        "importeur": "Nico",
+        "delen": "27",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "jPtVktCfu4o",
+        "thumbnail": "https://img.youtube.com/vi/jPtVktCfu4o/hqdefault.jpg"
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Kracher Inferno",
+        "local": "false",
+        "category": "Knalvuurwerk",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "150",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Kubische Kanonenschläge",
+        "local": "true",
+        "category": "Knalvuurwerk",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "9",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Flash bang",
+        "local": "false",
+        "category": "Single Shots",
+        "type": "Cat 2",
+        "price": "3.49",
+
+        "kruid": "ca. 2 gram",
+        "importeur": "Weco",
+        "delen": "10",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "jJ4Kv8JnYw0",
+        "thumbnail": "https://img.youtube.com/vi/jJ4Kv8JnYw0/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Double Flash",
+        "local": "true",
+        "category": "Single Shots",
+        "type": "Cat 2",
+        "price": "3.49",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "10",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "SbVRutJC3gY",
+        "thumbnail": "https://img.youtube.com/vi/SbVRutJC3gY/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Double Crusher",
+        "local": "true",
+        "category": "Single Shots",
+        "type": "Cat 2",
+        "price": "3.49",
+
+        "kruid": "ca. 10 gram",
+        "importeur": "Nico",
+        "delen": "10",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "XPLxA1WOt7E",
+        "thumbnail": "https://img.youtube.com/vi/XPLxA1WOt7E/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Sky Shots",
+        "local": "false",
+        "category": "Single Shots",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "4",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "mY3Wq4QnRbQ",
+        "thumbnail": "https://img.youtube.com/vi/mY3Wq4QnRbQ/hqdefault.jpg"
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Pyro-mix for kids",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "3.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "165",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Party Animal",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "4.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "14",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Leucht-spektakel",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "5.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "9",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Super sonic",
+        "local": "true",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "7.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "220",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "nR8WDEtxvvw",
+        "thumbnail": "https://img.youtube.com/vi/nR8WDEtxvvw/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Fire Fantasy",
+        "local": "true",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "8.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "200",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "pQE3ai6NQ",
+        "thumbnail": "https://img.youtube.com/vi/pQE3ai6NQ/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "World Champion",
+        "local": "true",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "20",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "BT4vcQKSYJM",
+        "thumbnail": "https://img.youtube.com/vi/BT4vcQKSYJM/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Jewels of the sky",
+        "local": "true",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "21.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "8",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "OHxdYvi7YaI",
+        "thumbnail": "https://img.youtube.com/vi/OHxdYvi7YaI/hqdefault.jpg"
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Bombette",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "37.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "60",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+
+
+
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Party fun-bag",
+        "local": "false",
+        "category": "Overig",
+        "type": "Cat 1",
+        "price": "2.79",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "4",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Zauber Lichten",
+        "local": "false",
+        "category": "Overig",
+        "type": "Cat 1",
+        "price": "3.49",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "10",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl.html",
+        "shop": "Lidl",
+
+        "name": "Tischfeuerwerk",
+        "local": "false",
+        "category": "Overig",
+        "type": "Cat 1",
+        "price": "3.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "5",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "",
+        "thumbnail": ""
+    },
+    {
+        "shophtml": "lidl",
+        "shop": "Lidl",
+
+        "name": "Twister",
+        "local": "false",
+        "category": "Overig",
+        "type": "Cat 2",
+        "price": "5.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "4",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "",
+        "videoId": "qlqB25zR8BQ",
+        "thumbnail": "https://img.youtube.com/vi/qlqB25zR8BQ/hqdefault.jpg"
+    },
+
+
+
+
+    {
+        "shophtml": "../../aldi.html",
+        "shop": "Aldi",
+
+        "name": "Eruption",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "2.29",
+
+        "kruid": "ca. 80 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "14",
+        "brandduur": "20",
+
+        "image": "../../img/aldi/Eruption.jpg",
+        "videoId": "m4gMkD4mIm8"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Artus",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "2.79",
+
+        "kruid": "ca. 45 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "1 schoten",
+        "kaliber": "18",
+        "brandduur": "15",
+
+        "image": "img/aldi/Artus.jpg",
+        "videoId": "IQA18G3pf6k"
+    },
+    {
+        "shophtml": "../../aldi/sud.html",
+        "shopname": "Aldi Sud",
+        "cartplace": "aldi-sud",
+
+        "name": "Poison",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 107 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "20",
+        "brandduur": "25",
+
+        "image": "../../img/aldi/Poison.jpg",
+        "videoId": "PXnx9o8LZRk"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Parzival",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "6.99",
+
+        "kruid": "ca. 176 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "72 schoten",
+        "kaliber": "13",
+        "brandduur": "60",
+
+        "image": "img/aldi/Parzival.jpg",
+        "videoId": "f4TNriM3_bs"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Van Gogh",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "7.99",
+
+        "kruid": "ca. 142.8 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "82 schoten",
+        "kaliber": "15",
+        "brandduur": "45",
+
+        "image": "img/aldi/Van-Gogh.jpg",
+        "videoId": "9ESvwnqRHL4"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Kopernikus",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "12.99",
+
+        "kruid": "ca. 186 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "86 schoten",
+        "kaliber": "15",
+        "brandduur": "50",
+
+        "image": "img/aldi/Kopernikus.jpg",
+        "videoId": "PFSX7Vup2pE"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Galaxy",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "12.99",
+
+        "kruid": "ca. 314 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "200 schoten",
+        "kaliber": "11",
+        "brandduur": "30-50",
+
+        "image": "img/aldi/Galaxy.jpg",
+        "videoId": "boFEWAgG9kA"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Skyblaze",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 242 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "85 schoten",
+        "kaliber": "15",
+        "brandduur": "35",
+
+        "image": "img/Temp-Image.jpg",
+        "videoId": "L7rlAMlgLto"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Witchcraft",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "16.99",
+
+        "kruid": "ca. 256 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "104 schoten",
+        "kaliber": "13",
+        "brandduur": "30",
+
+        "image": "img/aldi/Witchcraft.jpg",
+        "videoId": "wiRHujjkLq8"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Rockstar",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "17.99",
+
+        "kruid": "ca. 416 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "56 schoten",
+        "kaliber": "20",
+        "brandduur": "50",
+
+        "image": "img/aldi/Rockstar.jpg",
+        "videoId": "obCTsVzargI"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Heavy Metal Reloaded",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "18.99",
+
+        "kruid": "ca. 355 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "19 schoten",
+        "kaliber": "30",
+        "brandduur": "30",
+
+        "image": "img/aldi/Heavy-Metal-Reloaded.jpg",
+        "videoId": "WuWufxV5YEI"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 450 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "27 schoten",
+        "kaliber": "30",
+        "brandduur": "70",
+
+        "image": "img/aldi/Blow-Out.jpg",
+        "videoId": "APf_KT3rsHc"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Rowdy",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "29.99",
+
+        "kruid": "ca. 500 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "53 schoten",
+        "kaliber": "25",
+        "brandduur": "50",
+
+        "image": "img/aldi/Rowdy.jpg",
+        "videoId": "GJT-ByP2X3w"
+    },
+
+
+
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Valhalla",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 362 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "131 schoten",
+        "kaliber": "",
+        "brandduur": "110",
+
+        "image": "img/Temp-Image.jpg",
+        "videoId": "FThM5NVMdxY"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Midnight Hunter",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "ca. 403 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "148 schoten",
+        "kaliber": "",
+        "brandduur": "60",
+
+        "image": "img/aldi/Midnight-Hunter.jpg",
+        "videoId": "dHOx3BlWqWA"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Final Showdown",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "34.99",
+
+        "kruid": "ca. 612 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "206 schoten",
+        "kaliber": "",
+        "brandduur": "100",
+
+        "image": "img/aldi/Final-Showdown.jpg",
+        "videoId": "NrJhxjX55K4"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Dreamcatcher",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "39.99",
+
+        "kruid": "ca. 724 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "185 schoten",
+        "kaliber": "",
+        "brandduur": "120",
+
+        "image": "img/aldi/Dreamcatcher.jpg",
+        "videoId": "4gdYg8Ji8ZQ"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Sky of Diamonds",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "59.99",
+
+        "kruid": "ca. 1648 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "152 schoten",
+        "kaliber": "",
+        "brandduur": "130",
+
+        "image": "img/aldi/Sky-of-Diamonds.jpg",
+        "videoId": "M1SiAHGSHQc"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Euphorica",
+        "local": "true",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "99.99",
+
+        "kruid": "ca. 1791 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "139 schoten",
+        "kaliber": "",
+        "brandduur": "70",
+
+        "image": "img/aldi/Euphorica.jpg",
+        "videoId": "BDLTh5v7MSI"
+    },
+
+
+
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Hornito",
+        "local": "false",
+        "category": "Fonteinen",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "50",
+
+        "image": "img/Temp-Image.jpg",
+        "videoId": "ZcIbnE9Aqag"
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Magma Monster",
+        "local": "false",
+        "category": "Fonteinen",
+        "type": "Cat 2",
+        "price": "6.99",
+
+        "kruid": "ca. 250 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "50",
+
+        "image": "img/aldi/Magma-Monster.jpg",
+        "videoId": ""
+    },
+
+
+
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Ivanhoe & Viel Gluck",
+        "local": "false",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "8",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Lancelot",
+        "local": "false",
+        "category": "Vuurpijlen",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "18",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Lancelot.jpg",
+        "videoId": ""
+    },
+
+
+
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Double Power",
+        "local": "false",
+        "category": "Single Shots",
+        "type": "Cat 2",
+        "price": "3.49",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "10",
+        "schoten": "",
+        "kaliber": "20",
+        "brandduur": "",
+
+        "image": "img/aldi/Double-Power.jpg",
+        "videoId": ""
+    },
+
+
+
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Star Hunter",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "4.69",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "85",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Star-Hunter.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Schatzinsel",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 1",
+        "price": "???",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "180",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Rainbow road",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Jackpot",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "9.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "60",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Jackpot.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Art of Light",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "17.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "17",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Art-of-light.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "aldi.html",
+        "shop": "Aldi",
+
+        "name": "Camelot",
+        "local": "false",
+        "category": "Pakketten",
+        "type": "Cat 2",
+        "price": "19.99",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "45",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "img/aldi/Camelot.jpg",
+        "videoId": ""
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Solar Flare",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 64 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "15",
+        "brandduur": "30",
+
+        "image": "../../img/aldi/Solar-Flare.jpg",
+        "videoId": "LkMgNLqllns"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Poison",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 107 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "16 schoten",
+        "kaliber": "20",
+        "brandduur": "25",
+
+        "image": "../../img/aldi/Poison.jpg",
+        "videoId": "PXnx9o8LZRk"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Tristan",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 200 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "19 schoten",
+        "kaliber": "20",
+        "brandduur": "30",
+
+        "image": "../../img/aldi/Tristan.jpg",
+        "videoId": "SPV7P9NwpBM"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Kaboomer",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 138 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "54 schoten",
+        "kaliber": "15",
+        "brandduur": "40",
+
+        "image": "../../img/aldi/Kaboomer.jpg",
+        "videoId": "6EG8wXa7Jwk"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Glitzerkiste",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 149 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "111 schoten",
+        "kaliber": "15",
+        "brandduur": "50",
+
+        "image": "../../img/aldi/Glitzerkiste.jpg",
+        "videoId": "EtYlD_x3k_I"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Feuerkugel",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. ??? gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "??? schoten",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Kopernikus",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 186 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "86 schoten",
+        "kaliber": "15",
+        "brandduur": "50",
+
+        "image": "../../img/aldi/Kopernikus.jpg",
+        "videoId": "PFSX7Vup2pE"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Galaxy",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 314 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "2x 100 schoten",
+        "kaliber": "11",
+        "brandduur": "30 - 50",
+
+        "image": "../../img/aldi/Tristan.jpg",
+        "videoId": "boFEWAgG9kA"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Skyblaze",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. ??? gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "??? schoten",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Big Boombastic",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 288 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "20 schoten",
+        "kaliber": "25",
+        "brandduur": "25",
+
+        "image": "../../img/aldi/Big-Boombastic.jpg",
+        "videoId": "FInX3e7BrdI"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Fireworks Fiesta",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 347 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "67 schoten",
+        "kaliber": "25",
+        "brandduur": "35",
+
+        "image": "../../img/aldi/Fireworks-Fiesta.jpg",
+        "videoId": "vdrVWj05GZs"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Heavy Metal Reloaded",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 355 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "19 schoten",
+        "kaliber": "30",
+        "brandduur": "30",
+
+        "image": "../../img/aldi/Heavy-Metal-Reloaded.jpg",
+        "videoId": "WuWufxV5YEI"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Blowout",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 450 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "27 schoten",
+        "kaliber": "30",
+        "brandduur": "60",
+
+        "image": "../../img/aldi/Blow-Out.jpg",
+        "videoId": "APf_KT3rsHc"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Barracuda",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "13.99",
+
+        "kruid": "ca. 467 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "50 schoten",
+        "kaliber": "20",
+        "brandduur": "50",
+
+        "image": "../../img/aldi/Bara-Cuda.jpg",
+        "videoId": "moCtUmpr27Y"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Thunderbolt",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 309 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "47 schoten",
+        "kaliber": "20",
+        "brandduur": "40",
+
+        "image": "../../img/aldi/Thunderbolt.jpg",
+        "videoId": "XhiQCWCkAZE"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Trickster",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 496 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "45 schoten",
+        "kaliber": "30",
+        "brandduur": "75",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Hellhounds",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 473 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "43 schoten",
+        "kaliber": "30",
+        "brandduur": "60",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Rowdy",
+        "local": "false",
+        "category": "Cakes",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 500 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "53 schoten",
+        "kaliber": "25",
+        "brandduur": "50",
+
+        "image": "../../img/aldi/Rowdy.jpg",
+        "videoId": "GJT-ByP2X3w"
+    },
+
+
+
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Valhalla",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 362 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "131 schoten",
+        "kaliber": "",
+        "brandduur": "110",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "FThM5NVMdxY"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Midnight Hunter",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 403 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "148 schoten",
+        "kaliber": "",
+        "brandduur": "60",
+
+        "image": "../../img/aldi/Midnight-Hunter.jpg",
+        "videoId": "dHOx3BlWqWA"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Queen of Infinity",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 306 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "337 schoten",
+        "kaliber": "15",
+        "brandduur": "55",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Final Showdown",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 612 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "206 schoten",
+        "kaliber": "",
+        "brandduur": "100",
+
+        "image": "../../img/aldi/Final-Showdown.jpg",
+        "videoId": "NrJhxjX55K4"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Dreamcatcher",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 724 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "185 schoten",
+        "kaliber": "",
+        "brandduur": "120",
+
+        "image": "../../img/aldi/Dreamcatcher.jpg",
+        "videoId": "4gdYg8Ji8ZQ"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Dragons Breath",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 614 gram",
+        "importeur": "Nico",
+        "delen": "1",
+        "schoten": "160 schoten",
+        "kaliber": "19",
+        "brandduur": "100",
+
+        "image": "../../img/aldi/Dragons-Breath.jpg",
+        "videoId": "I9nNdJnJPxU"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Euphorica",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 1791 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "139 schoten",
+        "kaliber": "",
+        "brandduur": "70",
+
+        "image": "../../img/aldi/Euphorica.jpg",
+        "videoId": "BDLTh5v7MSI"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "Pyro Concept 480",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "ca. 3648 gram",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "480 schoten",
+        "kaliber": "20",
+        "brandduur": "230",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": "GbZuhRLe7tU"
+    },
+    {
+        "shophtml": "../../aldi/nord.html",
+        "shopname": "Aldi Nord",
+        "cartplace": "aldi-nord",
+
+        "name": "High Performance",
+        "local": "false",
+        "category": "Compounds",
+        "type": "Cat 2",
+        "price": "???",
+
+        "kruid": "",
+        "importeur": "Weco",
+        "delen": "1",
+        "schoten": "",
+        "kaliber": "",
+        "brandduur": "",
+
+        "image": "../../img/Temp-Image.jpg",
+        "videoId": ""
+    }
+
+]

@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ui', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    height: 25px;
+    line-height: 25px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-buttons li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative; /* To position the dropdown */
+}
+
+/* Active Link Style */
+#navbar-buttons .active {
+    color: #088178;
+}
+
+#other-buttons .active i {
+    color: #088178;
+}
+
+/* Navbar Links */
+#home-link,
+#lidl-link,
+#aldi-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+    height: 18px;
+    line-height: 18px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+
+#home-link:hover,
+#lidl-link:hover,
+#aldi-link:hover,
+#search-link:hover,
+#account-link:hover,
+#shopping-cart:hover i {
+    color: #088178;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Icons in Navbar Links */
+#lidl-link i,
+#aldi-link i {
+    display: flex;
+    height: 18px;
+    line-height: 18px;
+    align-items: center;
+}
+
+/* Other Buttons in Navbar */
+#other-buttons {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    height: 25px;
+    line-height: 25px;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Flex Properties for Icons */
+#search-link,
+#account-link {
+    cursor: pointer;
+    display: flex; /* Enable flexbox for the links */
+    align-items: center; /* Center the content of the links vertically */
+}
+
+#account-link,
+#shopping-cart {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#account-link i {
+    display: flex; /* Enable flexbox for the links */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center horizontally if needed */
+}
+
+/* Shopping Cart Container */
+#shopping-cart {
+    cursor: pointer;
+    display: flex; /* Enable flexbox for the links */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center horizontally if needed */
+}
+
+/* Ensure the link and counter are flex items and centered */
+#cart-link {
+    margin-right: 5px;
+    display: flex; /* Treat these elements as flex items */
+    align-items: center; /* Center content vertically within each item */
+}
+
+/* Cart Counter Styles */
+#cart-counter {
+    display: flex; /* Treat these elements as flex items */
+    align-items: center; /* Center content vertically within each item */
+    justify-content: center; /* Center text horizontally */
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 50%; /* Ensures it stays circular */
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1%;
+
+    /* Initially hidden */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-content li {
+    list-style: none;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content li a {
+    font-weight: 700;
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content li:hover a {
+    color: #088178;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;          /* Fade in */
+    visibility: visible;  /* Make it visible */
+}
+
+.dropdown-content li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dropdown-content li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+#profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#profile-dropdown a {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally if needed */
+    height: 100%; /* Ensure it takes the full height of its parent */
+}
+
+#profile-content {
+    position: absolute;
+    background-color: #ffffff;
+    width: 200px; /* Match the width of .dropdown-content */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Match the box-shadow */
+    z-index: 1;
+    border-radius: 5px; /* Match the border-radius */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    pointer-events: none; /* Prevent mouse events when hidden */
+}
+
+#profile-dropdown.click #profile-content,
+#profile-dropdown.logged-in:hover #profile-content {
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make it visible */
+    pointer-events: auto; /* Allow mouse events when visible */
+}
+
+#profile-content li {
+    list-style: none;
+    width: 100%; /* Match width */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#profile-content li p {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 700;
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex; /* Change from block to flex */
+    justify-content: space-between; /* Space out children */
+    align-items: center; /* Center items vertically */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+#profile-username {
+    cursor: default;
+}
+
+#logout:hover {
+    cursor: pointer;
+    color: #088178; /* Change color on hover for text */
+    background-color: #f1f1f1; /* Add hover effect for items */
+}
+
+#logout i {
+    margin-left: auto; /* Push the icon to the right */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#profile {
+    margin: 128px 0px;
+    padding: 0px 16px;
+    /*background-color: #ff0000;*/
+
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+
+#form {
+    width: 385px;
+    height: fit-content;
+
+    /*background-color: #00ffee;*/
+}
+
+#form h1 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+#form input {
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    border: gray solid 1.5px;
+    border-radius: 2.5px;
+    transition: border-color 0.3s ease; /* Optional: smooth transition */
+}
+
+#form input:focus {
+    outline: none;
+    border: #088178 solid 2px;
+}
+
+
+
+#password-box {
+    margin-top: 24px;
+}
+
+#form h2 {
+    margin-top: 25px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#form h2 a {
+    color: #088178;
+    text-decoration: none;
+}
+
+#form button {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+
+    margin-top: 24px;
+    padding: 8px 16px;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #088178;
+    border: none;
+}
+
+#form h3 {
+    text-align: center;
+    margin-top: 10px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #088178;
+}
+
+#form h3 a {
+    font-weight: 600;
+    color: #088178;
+    text-decoration: none;
+}
+
+    /* Simple CSS to manage visibility */
+    #register-form, #login-form {
+        display: none; /* Hide both forms by default */
+    }
+    
+    #register-form.active, #login-form.active {
+        display: block; /* Show active form */
+    }

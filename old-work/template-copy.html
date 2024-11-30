@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f6f6445ca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="active" href="lidl.html">Lidl <i class="fi-sr-angle-small-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#cakes">Cakes</a></li>
+                        <li><a href="#compounds">Compounds</a></li>
+                        <li><a href="fonteinen.html">Fonteinen</a></li>
+                        <li><a href="vuurpijlen.html">Vuurpijlen</a></li>
+                        <li><a href="singleshots.html">Single Shots</a></li>
+                        <li><a href="pakketten.html">Pakketten</a></li>
+                        <li><a href="overig.html">Overig</a></li>
+                    </ul>
+                </li>
+                <li><a href="aldi.html">Aldi</a></li>
+                <li class="cart-btn">
+                    <a href="cart.html">
+                        <i class="fi-br-shopping-bag"></i>
+                        <h1>4</h1>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fi-rr-shopping-bag"></i></a>
+            <i id="bar" class="fi-rr-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div id="prodetails">
+            <div class="filler">
+                <a id="prev" href="lidl.html">
+                    <i class="fi-br-angle-left"></i>
+                    Terug
+                </a>                
+                <span class="home"><a id="grey" href="home.html">Home</a></span>
+                <span class="slash"> / </span>
+                <span class="lidl"><a id="grey" href="lidl.html">Lidl</a></span>
+                <span class="slash"> / </span>
+                <span class="cakes"><a id="grey" href="lidl.html#cakes">Cakes</a></span>
+                <span class="slash"> / </span>
+                <span class="name">Infinity Fire</span>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="img-container">
+                <div class="img-box" id="MainImg">
+                    <div class="media-container">
+                        <img src="img/lidl/infinity.png" alt="Product Image">
+                    </div>
+                    <i id="prev-img" class="fi-br-angle-left"></i>
+                    <i id="next-img" class="fi-br-angle-right"></i>
+                    <i id="zoom-img" class="fi-br-zoom-in"></i>
+                </div>
+                <div class="small-img-col">
+                    <div class="small-img-box">
+                        <img src="img/lidl/infinity.png" class="selected" alt="Product Image">
+                    </div>
+                    <div class="small-img-box video-box" id="video-box">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/-OG_H9K4BM8/hqdefault.jpg" alt="Thumbnail">
+                        <img class="play-button" src="img/play-button.png" alt="Play Button">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h1>Infinity Fire</h1>
+                <h2>Cakes | Cat 2</h2>
+                <h3>Beschrijving</h3>
+                <h4>9,99</h4>
+                <div class="cart">
+                    <h1>Aantal</h1>
+                    <input type="number" value="1">
+                    <button>Plaats in winkelwagen</button>
+                </div>
+                <div class="single-pro-tabel">
+                    <h1>Specificaties</h1>
+                    <div class="tabel1">
+                        <h1>Kruit totaal (gram)</h1>
+                        <h2>254 gram</h2>
+                    </div>
+                    <div class="tabel2">
+                        <h1>Importeur</h1>
+                        <h2>Weco</h2>
+                    </div>
+                    <div class="tabel1">
+                        <h1>Aantal delen</h1>
+                        <h2>1</h2>
+                    </div>
+                    <div class="tabel2">
+                        <h1>Schoten</h1>
+                        <h2>36 schoten</h2>
+                    </div>
+                    <div class="tabel1">
+                        <h1>Kaliber</h1>
+                        <h2>20</h2>
+                    </div>
+                    <div class="tabel2">
+                        <h1>Brandduur</h1>
+                        <h2>40</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+const smallImgBoxes = document.querySelectorAll('.small-img-box');
+const mediaContainer = document.querySelector('.media-container');
+const zoomImgButton = document.querySelector('#zoom-img'); // Get the zoom button element
+let isVideoPlaying = false;
+let currentIndex = 0; // Track the current index of the small image box
+
+// Create overlay for zoomed image
+const zoomOverlay = document.createElement('div');
+zoomOverlay.id = 'zoom-overlay';
+document.body.appendChild(zoomOverlay);
+
+// Set the first small image box as selected on startup
+smallImgBoxes[0].classList.add('selected');
+mediaContainer.innerHTML = `<img src="${smallImgBoxes[0].querySelector('img').src}" alt="Product Image">`;
+
+// Function to update the main image or video
+function updateMedia(index) {
+    const selectedBox = smallImgBoxes[index];
+    const thumbnail = selectedBox.querySelector('.thumbnail');
+    
+    // Update selected class
+    smallImgBoxes.forEach(b => b.classList.remove('selected'));
+    selectedBox.classList.add('selected');
+
+    if (thumbnail) {
+        // Switch to video
+        if (!isVideoPlaying) {
+            mediaContainer.innerHTML = ''; // Clear the current content
+            const iframe = document.createElement('iframe');
+            iframe.src = "https://www.youtube.com/embed/-OG_H9K4BM8?controls=1&modestbranding=1&rel=0";
+            iframe.width = "100%";
+            iframe.height = "100%";
+            iframe.frameBorder = "0";
+            iframe.allow = "autoplay; encrypted-media";
+            iframe.allowFullscreen = true;
+            mediaContainer.appendChild(iframe);
+            mediaContainer.classList.add('iframe-active');
+            isVideoPlaying = true;
+
+            // Set arrows to white
+            document.querySelector('#prev-img').classList.add('active');
+            document.querySelector('#next-img').classList.add('active');
+        }
+    } else {
+        // Switch to image
+        const smallImg = selectedBox.querySelector('img');
+        if (smallImg) {
+            mediaContainer.innerHTML = `<img src="${smallImg.src}" alt="Product Image">`;
+            isVideoPlaying = false;
+
+            // Reset arrows color
+            document.querySelector('#prev-img').classList.remove('active');
+            document.querySelector('#next-img').classList.remove('active');
+        }
+    }
+}
+
+// Click event for small image boxes
+smallImgBoxes.forEach((box, index) => {
+    box.addEventListener('click', () => {
+        currentIndex = index; // Update current index
+        updateMedia(currentIndex);
+    });
+});
+
+// Event listeners for arrows
+document.querySelector('#prev-img').addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? smallImgBoxes.length - 1 : currentIndex - 1;
+    updateMedia(currentIndex);
+});
+
+document.querySelector('#next-img').addEventListener('click', () => {
+    currentIndex = (currentIndex === smallImgBoxes.length - 1) ? 0 : currentIndex + 1;
+    updateMedia(currentIndex);
+});
+
+// Zoom functionality
+zoomImgButton.addEventListener('click', () => {
+    const selectedImg = smallImgBoxes[currentIndex].querySelector('img');
+    zoomOverlay.innerHTML = `<img src="${selectedImg.src}" alt="Zoomed Image">`;
+    zoomOverlay.style.display = 'flex'; // Show the overlay
+});
+
+// Close the overlay when clicking outside the image
+zoomOverlay.addEventListener('click', () => {
+    zoomOverlay.style.display = 'none'; // Hide the overlay
+});
+
+
+
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
